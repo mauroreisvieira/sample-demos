@@ -8,10 +8,10 @@ class ES6DevTools {
 
     getData () {
         const people = [
-            { passed: 2000, first : 'Mauro', last : 'Vieira', year: 1990  },
-            { passed: 2008, first : 'Didie', last : 'Margarido', year: 1970  },
-            { passed: 2008, first : 'André', last : 'Ramalho', year: 1970  },
-            { passed: 2010, first : 'Rubem', last : 'Motas', year: 1992  },
+        { passed: 2000, first : 'Mauro', last : 'Vieira', year: 1990  },
+        { passed: 2008, first : 'Didie', last : 'Margarido', year: 1970  },
+        { passed: 2008, first : 'André', last : 'Ramalho', year: 1970  },
+        { passed: 2010, first : 'Rubem', last : 'Motas', year: 1992  },
         ];        
         
         // Passar por variaveis para o console log.
@@ -28,11 +28,6 @@ class ES6DevTools {
         console.assert(1 === 2, 'It`s wrong, believe me.');
         console.assert(1 === 1, 'It`s true!');
 
-        const titleEl = document.querySelector('h1');
-        console.assert(titleEl.classList.contains('header__title'), 'That is wrong!');
-
-        console.log(titleEl);
-        console.dir(titleEl);
         
         //console.clear();
         
@@ -58,9 +53,16 @@ class ES6DevTools {
         console.count('Hi INTERACTIVE');
         console.table(people);
 
+
+        const arr1 = [1,2,3];
+        const arr2 = [4,5,6];
+        const arr3 = [...arr1, ...arr2];
+
+        console.log(arr3);
+
         //console.clear();
         console.time('Request');
-        fetch('https://jsonplaceholder.typicode.com/posts')
+        fetch('http://jsonplaceholder.typicode.com/users')
         .then(data => data.json())
         .then(data => {
             console.log(data);
