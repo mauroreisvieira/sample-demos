@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background: #FAFAFA;
+    font-family: Arial, sans-serif;
+}
+
+.main {
+    max-width: 1024px;
+    display: block;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.arrow-select {
+    display: block;
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.arrow-select:before {
+    color:  #3f51b5;
+    opacity: .4;
+    will-change: transform;
+    transform: none;
+    transition: .3s transform cubic-bezier(0.25, 0.1, 0.47, 0.65), .6s opacity ease;
+    content: '▶';
+    display: block;
+    left: 0;
+    top: 10px;
+    position: absolute;
+    font-size: 24px;
+}
+
+.arrow-select:after {
+    color:  #3f51b5;
+    opacity: .4;
+    will-change: transform;
+    transform: none;
+    transition: .3s transform cubic-bezier(0.25, 0.1, 0.47, 0.65), .6s opacity ease;
+    content: '◀';
+    display: block;
+    right: 0;
+    top: 10px;
+    position: absolute;
+    font-size: 24px;
+}
+
+.arrow-select.animate:before {
+    opacity: 1;
+    transform: translateX(100px) rotate(180deg);
+}
+
+.arrow-select.animate:after {
+    opacity: 1;
+    transform: translateX(-100px) rotate(-180deg);
+}
+
+.button {
+    padding: 14px 18px;
+    border: 0;
+    background-color: #E91E63;
+    display: block;
+    margin: 30px auto;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 2px;
+    transition: background .2s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #C2185B;
+}
+
+.button:focus {
+    outline: none;
+}
