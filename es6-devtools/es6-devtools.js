@@ -4,6 +4,7 @@ class ES6DevTools {
 
     constructor() {
         this.getData();
+        this.map();
     }
 
     getData () {
@@ -69,6 +70,30 @@ class ES6DevTools {
             console.timeEnd('End Request');
         });
 
+    }
+
+    map() {
+        console.log('%c Map! ', 'font-size: 20px;');
+        // instantiation
+        const myMap = new Map([
+            [ "A", 1 ],
+            [ "B", 2 ]
+        ]);
+
+        console.log(myMap);
+
+        // what's built into Map for you
+        myMap.forEach( (val, key) => console.log(key, val) ); // "A 1", "B 2"
+
+        // what Array can do for you
+        Array.from( myMap ).map(([key, value]) => ({ key, value })); // [{key:"A", value: 1}, ... ]
+
+        // less awesome iteration
+        let entries = myMap.entries( );
+        console.log(entries);
+        for (let entry of entries) {
+            console.log(entry);
+        }
     }
 }
 
