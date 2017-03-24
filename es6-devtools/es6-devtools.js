@@ -61,6 +61,25 @@ class ES6DevTools {
 
         console.log(arr3);
 
+        [ 1, 3, 4, 2 ].find(x => x > 3) // 4
+
+        console.log("hello".startsWith("ello", 1));
+        console.log("hello".endsWith("hell", 4) );
+        console.log("hello".includes("ell"));
+        console.log("hello".includes("ell", 1));
+        console.log("hello".includes("ell", 2));
+
+        function msgAfterTimeout (msg, who, timeout) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => resolve(`${msg} Hello ${who}!`), timeout)
+            })
+        }
+        msgAfterTimeout("", "Mauro", 100).then((msg) =>
+            msgAfterTimeout(msg, "Vieira", 200)
+            ).then((msg) => {
+                console.log(`done after 300ms:${msg}`)
+            })
+
         //console.clear();
         console.time('Request');
         fetch('http://jsonplaceholder.typicode.com/users')
@@ -78,7 +97,7 @@ class ES6DevTools {
         const myMap = new Map([
             [ "A", 1 ],
             [ "B", 2 ]
-        ]);
+            ]);
 
         console.log(myMap);
 
