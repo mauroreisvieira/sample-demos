@@ -6,7 +6,7 @@ class Cookie {
 
         this._el = document.querySelector('.js-main');
         this.cleanBtn = document.querySelector('.js-clean-button');
-        this.closeBtn = document.querySelector('.js-close-button');
+        this.closeBtn = document.querySelector('.js-accept-button');
         this._content = this._el.querySelector('.js-content');
 
         this.setCookie = this.setCookie.bind(this);
