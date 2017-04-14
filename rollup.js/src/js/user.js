@@ -7,8 +7,8 @@ export default class User {
     }
 
     toString () {
-        let $bodyEl = document.querySelector('header');
-        let age = this.getMyAge();
+        var $bodyEl = document.querySelector('header');
+        var age = this.getMyAge();
 
         $bodyEl.innerHTML = `
             <h1>My name is ${this.name}. I'm ${age} years old!</h1>
@@ -17,8 +17,8 @@ export default class User {
     }
 
     getMyAge() {
-        let today = new Date().getFullYear();
-        let birthday = new Date(this.birthday).getFullYear();
+        var today = new Date().getFullYear();
+        var birthday = new Date(this.birthday).getFullYear();
         return today - birthday;
     }
 }

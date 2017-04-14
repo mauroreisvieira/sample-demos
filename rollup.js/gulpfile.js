@@ -1,3 +1,4 @@
+'use strict';
 var gulp = require('gulp');
 var rollup = require('rollup');
 var rollupTypescript = require('rollup-plugin-typescript');
