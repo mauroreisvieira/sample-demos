@@ -1,0 +1,1 @@
+!function(n,e){"object"==typeof exports&&"undefined"!=typeof module?e():"function"==typeof define&&define.amd?define(e):e()}(0,function(){"use strict";var n=function(){function n(n){this.name=n,this.name=n}return n}(),e=new n("Mauro");document.body.innerHTML="<h1>"+function(n){return"Hi, I "+n.name}(e)+"</h1>"});
