@@ -1,6 +1,4 @@
-'use strict';
-
-class Attribues {
+export class Attribues {
 
     constructor() {
         this.getPercentage();
@@ -23,4 +21,3 @@ class Attribues {
     }
 }
 
-new Attribues();

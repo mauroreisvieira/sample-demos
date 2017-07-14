@@ -1,5 +1,5 @@
 {
-  "name": "rollup.js",
+  "name": "KIT",
   "version": "1.0.0",
   "description": "",
   "dependencies": {
@@ -20,6 +20,8 @@
     "rollup-plugin-eslint": "^3.0.0",
     "rollup-plugin-uglify": "^1.0.1"
   },
-  "author": "@mauroreisvieira",
+  "author": [
+    "@mauroreisvieira"
+  ],
   "license": "MIT"
 }

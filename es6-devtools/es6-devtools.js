@@ -1,10 +1,11 @@
-'use strict';
+/*jshint esversion: 6 */
 
 class ES6DevTools {
 
     constructor() {
         this.getData();
         this.map();
+        this.getMovieAsync();
     }
 
     getData () {
@@ -13,15 +14,14 @@ class ES6DevTools {
         { passed: 2008, first : 'Didie', last : 'Margarido', year: 1970  },
         { passed: 2008, first : 'André', last : 'Ramalho', year: 1970  },
         { passed: 2010, first : 'Rubem', last : 'Motas', year: 1992  },
-        ];        
-        
-        // Passar por variaveis para o console log.
+        ];
+
         var flag = '🇵🇹';
 
         console.log('I love my %s and my %s', '🇵🇹', '👩🏻', 10);
         console.log(`I love my ${flag}`);
 
-        console.log('%c Nunca mais é sexta feira! ', 'font-size: 24px; color: blue;');
+        console.log('%c Nunca mais é sexta ira! ', 'font-size: 24px; color: blue;');
         console.warn(' Warning! This alert box indicates a warning that might need attention');
         console.error(' Danger! This alert box indicates a dangerous or potentially negative action. ');
         console.info('Info! This alert box indicates a neutral informative change or action.');
@@ -29,9 +29,6 @@ class ES6DevTools {
         console.assert(1 === 2, 'It`s wrong, believe me.');
         console.assert(1 === 1, 'It`s true!');
 
-        
-        //console.clear();
-        
         console.group('Team');
         people.forEach( person => {
             console.log(`Name: ${person.first} ${person.last}`);
@@ -54,33 +51,38 @@ class ES6DevTools {
         console.count('Hi INTERACTIVE');
         console.table(people);
 
-
         const arr1 = [1,2,3];
         const arr2 = [4,5,6];
         const arr3 = [...arr1, ...arr2];
 
         console.log(arr3);
 
-        [ 1, 3, 4, 2 ].find(x => x > 3) // 4
+        [ 1, 3, 4, 2 ].find(x => x > 3);
 
         console.log("hello".startsWith("ello", 1));
         console.log("hello".endsWith("hell", 4) );
         console.log("hello".includes("ell"));
         console.log("hello".includes("ell", 1));
         console.log("hello".includes("ell", 2));
+    }
 
-        function msgAfterTimeout (msg, who, timeout) {
-            return new Promise((resolve, reject) => {
-                setTimeout(() => resolve(`${msg} Hello ${who}!`), timeout)
-            })
+
+    map() {
+
+        console.log('%c Map! ', 'font-size: 20px;');
+        const myMap = new Map([[ "A", 1 ],[ "B", 2 ]]);
+        console.log(myMap);
+
+        myMap.forEach( (val, key) => console.log(key, val) );
+
+        Array.from( myMap ).map(([key, value]) => ({ key, value }));
+
+        let entries = myMap.entries( );
+        console.log(entries);
+        for (let entry of entries) {
+            console.log(entry);
         }
-        msgAfterTimeout("", "Mauro", 100).then((msg) =>
-            msgAfterTimeout(msg, "Vieira", 200)
-            ).then((msg) => {
-                console.log(`done after 300ms:${msg}`)
-            })
 
-        //console.clear();
         console.time('Request');
         fetch('http://jsonplaceholder.typicode.com/users')
         .then(data => data.json())
@@ -88,32 +90,29 @@ class ES6DevTools {
             console.log(data);
             console.timeEnd('End Request');
         });
-
     }
 
-    map() {
-        console.log('%c Map! ', 'font-size: 20px;');
-        // instantiation
-        const myMap = new Map([
-            [ "A", 1 ],
-            [ "B", 2 ]
-            ]);
+    // function* getStockPrice(name) {
+    //     var symbol = yield symbolPromisse;
+    //     var price yield getStockPrice(symbol);
+    //     return price;
+    // }
 
-        console.log(myMap);
+    // function spawn() {
+    //     return new Promise((accept, reject) => {
+    //         var onResult = lastPromisseReult => {
+    //             var {value, done} = {value: symbolPromisse, done: false};
+    //             if (!done) {
+    //                 value.then(onResult, reject);
+    //             }
+    //             else accept(value);
+    //         };
+    //         onResult();
+    //     });
+    // }
 
-        // what's built into Map for you
-        myMap.forEach( (val, key) => console.log(key, val) ); // "A 1", "B 2"
+    // spawn(getStockPrice("Johnson and Johson")).then(console.log);
 
-        // what Array can do for you
-        Array.from( myMap ).map(([key, value]) => ({ key, value })); // [{key:"A", value: 1}, ... ]
-
-        // less awesome iteration
-        let entries = myMap.entries( );
-        console.log(entries);
-        for (let entry of entries) {
-            console.log(entry);
-        }
-    }
 }
 
 new ES6DevTools();

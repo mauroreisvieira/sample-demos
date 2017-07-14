@@ -21,13 +21,13 @@ class Chat {
             if (message.postId == 1 || message.postId == 2) {
                 let elClass = message.postId == 1 ? '' : 'list__item--reverse';
                 $elHtml.innerHTML +=`<li class="list__item ${elClass}">
-                <div class="list__item__image">
-                <img src="https://pbs.twimg.com/profile_images/754886061872979968/BzaOWhs1.jpg">
-                <a href="mailto:${message.email}">${message.email}</a>
-                </div>
-                <div class="list__item__text">
-                <p>${message.body}</p>
-                </div>
+                    <div class="list__item__image">
+                        <img src="https://pbs.twimg.com/profile_images/754886061872979968/BzaOWhs1.jpg">
+                        <a href="mailto:${message.email}">${message.email}</a>
+                    </div>
+                    <div class="list__item__text">
+                        <p>${message.body}</p>
+                    </div>
                 </li>`;
             }
         });

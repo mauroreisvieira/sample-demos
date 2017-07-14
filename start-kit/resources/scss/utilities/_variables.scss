@@ -1,0 +1,26 @@
+// COLORS
+$black            : #000;
+$white            : #fff;
+$yellow           : #ffbd5d;
+$orange           : #ff974e;
+$red              : #fc6e71;
+$pink             : #ff599e;
+$violet           : #a677fb;
+$blue             : #03a9f4;
+$aqua             : #53dbc0;
+$green            : #98d9b2;
+
+$border-radius    : 2px;
+
+// FONT WEIGHT
+$font-light       : 100;
+$font-normal      : 400;
+$font-bold        : 500;
+$font-extra-bold  : 700;
+
+$list-breakpoints : (
+    small             : 767px,
+    medium            : 992px,
+    large             : 1200px,
+    x-large           : 1360px,
+  );

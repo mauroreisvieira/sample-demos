@@ -35,6 +35,7 @@ class Cookie {
             }
         }
 
+        // check if have Cookie.
         setCookie() {
             if (this._isCookie) return;
 
