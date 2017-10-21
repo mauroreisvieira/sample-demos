@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-class ES6DevTools {
+class DevTools {
 
     constructor() {
         this.getData();
@@ -91,30 +91,8 @@ class ES6DevTools {
             console.timeEnd('End Request');
         });
     }
-
-    // function* getStockPrice(name) {
-    //     var symbol = yield symbolPromisse;
-    //     var price yield getStockPrice(symbol);
-    //     return price;
-    // }
-
-    // function spawn() {
-    //     return new Promise((accept, reject) => {
-    //         var onResult = lastPromisseReult => {
-    //             var {value, done} = {value: symbolPromisse, done: false};
-    //             if (!done) {
-    //                 value.then(onResult, reject);
-    //             }
-    //             else accept(value);
-    //         };
-    //         onResult();
-    //     });
-    // }
-
-    // spawn(getStockPrice("Johnson and Johson")).then(console.log);
-
 }
 
-new ES6DevTools();
+new DevTools();
 
 

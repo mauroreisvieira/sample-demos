@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var rollup = require('rollup');
+var rollupjs = require('gulp-rollup');
 var rollupTypescript = require('rollup-plugin-typescript');
 var buble = require('rollup-plugin-buble');
 var pump = require('pump');
@@ -26,9 +27,20 @@ gulp.task('default', function (cb) {
   );
 });
 
+gulp.task('bundle', function() {
+  gulp.src('./resources/js/*.js')
+    .pipe(sourcemaps.init())
+      // transform the files here.
+      .pipe(rollupjs({
+        input: './src/main.js'
+      }))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./dist'));
+});
+
 gulp.task('typescript', function () {
     return rollup.rollup({
-        entry: "./resources/ts/skill.ts",
+        entry: "./resources/**/*.ts",
         plugins: [
         rollupTypescript()
         ],
@@ -45,7 +57,7 @@ gulp.task('typescript', function () {
 
 gulp.task('javascript', function () {
     return rollup.rollup({
-        entry: "./resources/js/main.js",
+        entry: "../resources/js/*.js",
         plugins: [
             buble(),
             uglify()
@@ -62,14 +74,14 @@ gulp.task('javascript', function () {
 });
 
 gulp.task('scss', function () {
-    return gulp.src('./resources/scss/app.scss')
-    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-    .pipe(gulp.dest('public/css/'));
+    return gulp.src('./resources/scss/*.scss')
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('public/css/'));
 });
 
 
 gulp.task('watch', function () {
-    gulp.watch('./resources/scss/app.scss', ['scss']);
-    gulp.watch('./resources/ts/skill.ts', ['typescript']);
-    gulp.watch('./resources/js/main.js', ['javascript']);
+    gulp.watch('../resources/**/*.scss', ['scss']);
+    gulp.watch('../resources/**/*.ts', ['typescript']);
+    gulp.watch('../resources/**/*.js', ['javascript']);
 });
