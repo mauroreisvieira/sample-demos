@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Destructing objects & arrays</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>Destructing objects & arrays</h1>
+</body>
+
+<script>
+  function logUser({email, name = 'anonymous', age}) {
+    console.log(name, age)
+  }
+
+  logUser({name: 'Doe', age: 20});
+  logUser({age: 40});
+
+  const coords = [230, 500];
+  const [x = 0, y = 0] = coords;
+
+  console.log(x);
+  console.log(y);
+</script>
+</html>
