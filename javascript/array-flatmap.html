@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Array flatMap()</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>Array flatMap()</h1>
+</body>
+
+<script>
+  const pairs = [
+    [2, 6],
+    [8, 2],
+    [5, 9]
+  ];
+
+  let result = [];
+
+  result = pairs.map((pair) => {
+    return [
+      pair[0] + pair[1]
+    ];
+  })
+  console.log(result);
+
+  result = pairs.flatMap((pair, index) => {
+    return [
+      pair[0] + pair[1]
+    ];
+  })
+  console.log(result);
+</script>
+</html>
