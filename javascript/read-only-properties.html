@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Read Only Properties</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <h1>Read Only Properties</h1>
+</body>
+
+<script type="text/javascript">
+  const person = {
+    name: 'Mauro',
+    age: 28,
+    occupation: 'Web Developer'
+  }
+
+  Object.defineProperty(person, 'born', {
+    value: 'Portugal',
+    writable: false
+  });
+
+  person.born = 'Brazil'
+  console.log(person);
+</script>
+</html>
