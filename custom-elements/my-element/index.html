@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Custom Element</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            color: indigo;
+            font-weight: 100;
+        }
+
+        .options {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 24px;
+            padding: 24px 0;
+        }
+
+        button {
+            display: inline-flex;
+            padding: 8px;
+            text-transform: uppercase;
+            color: indigo;
+            font-size: 12px;
+            font-weight: 600;
+            border: 2px solid currentColor;
+            cursor: pointer;
+        }
+
+        button:focus,
+        button:hover {
+            background-color: indigo;
+            border: 2px solid indigo;
+            color: white;
+            outline: none;
+        }
+
+        button[disabled],
+        button[disabled]:hover {
+            background: inherit;
+            border: 2px solid;
+            color: inherit;
+            cursor: default;
+            opacity: .2;
+        }
+    </style>
+    <h1>Life cycle of My Custom Element</h1>
+    <div class="options">
+        <button class="add">Add MyElement in DOM</button>
+        <button class="update">Update attributes</button>
+        <button class="remove">Remove MyElement from DOM</button>
+    </div>
+    <script src="my-element.js"></script>
+    <script>
+        const add = document.querySelector('.add');
+        const update = document.querySelector('.update');
+        const remove = document.querySelector('.remove');
+        let myElemet;
+
+        update.disabled = true;
+        remove.disabled = true;
+
+        add.addEventListener('click', (evt) => {
+            myElemet = document.createElement('my-element');
+            myElemet.setAttribute('color', 'red');
+            myElemet.setAttribute('fontSize', '20');
+            add.disabled = !add.disabled;
+            update.disabled = !add.disabled;
+            remove.disabled = !remove.disabled;
+            document.body.appendChild(myElemet);
+        });
+
+        update.addEventListener('click', (evt) => {
+            myElemet.setAttribute('color', `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`);
+            myElemet.setAttribute('fontSize', `${random(18, 36)}`);
+        });
+
+        remove.addEventListener('click', (evt) => {
+            document.body.removeChild(myElemet);
+            add.disabled = !add.disabled;
+            update.disabled = !add.disabled;
+            remove.disabled = !remove.disabled;
+        });
+
+        document.addEventListener('wow', (evt) => {
+            console.log(evt.detail.m, evt.detail.s);
+        });
+
+        random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+    </script>
+</body>
+</html>
