@@ -1,0 +1,11 @@
+{
+    "name": "sample-demos",
+    "version": "0.0.1",
+    "description": "Sample Demos",
+    "author": "Mauro Reis Vieira <mauroreisvieira@gmail.com>",
+    "license": "MIT",
+    "repository": "https://github.com/maurovieirareis/sample-demos",
+    "scripts": {
+        "start": "http-server"
+    }
+}
