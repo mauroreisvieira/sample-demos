@@ -8,9 +8,54 @@
 </head>
 <body>
     <header>
-        <h1>ECMAScript 2018</h1>
-        <a href="../index.html" title="back">👈</a>
+        <div class="container">
+            <h1>ECMAScript 2018</h1>
+            <a href="../index.html" title="back">👈</a>
+        </div>
     </header>
+    <main class="container">
+        <section>
+            <h4>Asynchronous iterator</h4>
+            <p>Next method returns a Promise.</p>
+            <pre>
+            const { value, done } = syncIterator.next();
+            asyncIterator.next().then(({ value, done }) => /* ... */);
+            </pre>
+        </section>
+
+        <section>
+            <h4>Await</h4>
+            <p>Iterates iterate objects asynchronously.</p>
+            <pre>
+            for await (const line of readLines(filePath)) {
+              console.log(line);
+            }
+            </pre>
+        </section>
+
+        <section>
+            <h4>Destructuring assignment</h4>
+            <p>Decompress arrays or object properties and assign them to new variables.</p>
+            <pre>
+            var a, b, rest;
+            [a, b] = [10, 20];
+
+            console.log(a);
+            // expected output: 10
+
+            console.log(b);
+            // expected output: 20
+
+            [a, b, ...rest] = [10, 20, 30, 40, 50];
+
+            console.log(rest);
+            // expected output: [30,40,50]
+            </pre>
+        </section>
+    </main>
+    <footer>
+        <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
+    </footer>
 </body>
 
 <script>
