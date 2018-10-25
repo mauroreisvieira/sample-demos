@@ -15,6 +15,20 @@
     </header>
     <main class="container">
         <section>
+            <h4>Delete value in object</h4>
+            <pre>
+            const user = {
+                filename: 'Jone',
+                lastName: 'Doe',
+                city: 'Roma',
+                email: 'hi@mail.com'
+            }
+            delete user.filename;
+            console.log(user) // {lastName: "Doe", city: "Roma", email: "hi@mail.com"}
+            </pre>
+        </section>
+
+        <section>
             <h4>Asynchronous iterator</h4>
             <p>Next method returns a Promise.</p>
             <pre>
@@ -59,7 +73,13 @@
 </body>
 
 <script>
-
-
+    const user = {
+        filename: 'Jone',
+        lastName: 'Doe',
+        city: 'Roma',
+        email: 'hi@mail.com'
+    }
+    delete user.filename;
+    console.log(user) // {lastName: "Doe", city: "Roma", email: "hi@mail.com"}
 </script>
 </html>

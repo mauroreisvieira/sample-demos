@@ -18,14 +18,22 @@ body {
     font-size: .875rem;
 }
 
-pre {
+pre,
+code {
     font-size: .9rem;
     background: var(--whiteSmoke);
     border: 1px solid var(--hawkesBlue);
     padding: 1rem 0 0;
     border-radius: 6px;
-    line-height: 1.6;
-    font-family: monospace;
+    line-height: 1.5;
+    color: #000;
+    font-family: Consolas, Monaco, monospace;
+    text-align: left;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    tab-size: 4;
+    hyphens: none;
 }
 
 main {
