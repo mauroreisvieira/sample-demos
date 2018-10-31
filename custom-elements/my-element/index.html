@@ -8,16 +8,29 @@
 <body>
     <header>
         <div class="container">
-            <h1>Life cycle of My Custom Element</h1>
-            <a href="./../../index.html" title="back">👈</a>
+            <div class="logo">Sample Demos</div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="./../../index.html"">Home</a></li>
+                    <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
-    <main class="container">
-        <div class="options">
-            <button class="add">Add MyElement in DOM</button>
-            <button class="update">Update attributes</button>
-            <button class="remove">Remove MyElement from DOM</button>
+    <div class="hero">
+        <div class="container">
+            <h1>Life cycle of My Custom Element</h1>
         </div>
+    </div>
+    <main class="container">
+        <section>
+            <div class="options">
+                <button class="add">Add MyElement in DOM</button>
+                <button class="update">Update attributes</button>
+                <button class="remove">Remove MyElement from DOM</button>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
@@ -27,7 +40,7 @@
         const add = document.querySelector('.add');
         const update = document.querySelector('.update');
         const remove = document.querySelector('.remove');
-        const main = document.querySelector('main');
+        const main = document.querySelector('section');
         let myElemet;
 
         update.disabled = true;

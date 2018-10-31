@@ -10,13 +10,30 @@
 <body>
     <header>
         <div class="container">
-            <h1>Generators, yield e iterators</h1>
-            <a href="../index.html" title="back">👈</a>
+            <div class="logo">Sample Demos</div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <div class="hero">
+        <div class="container">
+            <h1>Generators, yield e iterators</h1>
+        </div>
+    </div>
     <main class="container">
         <section>
-            <h3>Cookbook:</h3>
+            <h2>Iterators</h2>
+            <p>In JavaScript an iterator is an object which defines a sequence and potentially a return value upon its termination.</p>
+            <p> More specifically an iterator is any object which implements the Iterator protocol by having a <code>next()</code> method which returns an object with two properties:</p>
+            <ul>
+                <li><code>value</code> the next value in the sequence;</li>
+                <li><code>done</code> which is true if the last value in the sequence has already been consumed</li>
+            </ul>
             <div class="demo-code">
                 <pre class="hljs">
                     <code class="language-js">

@@ -4,28 +4,48 @@
     <meta charset="utf-8" />
     <title>Reduce</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/prism/prism.css">
     <link rel="stylesheet" href="../assets/styles/main.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Reduce</h1>
-            <a href="../index.html" title="back">👈</a>
+            <div class="logo">Sample Demos</div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <div class="hero">
+        <div class="container">
+            <h1>Reduce</h1>
+        </div>
+    </div>
     <main class="container">
-        <h3>Cookbook:</h3>
-        <pre>
-        const result = [1, 2, 3, 4].reduce((sum ,i) => sum + i);
-        console.log(result); // 10
-        </pre>
+        <section>
+            <h2>Cookbook:</h2>
+            <p>The <code>reduce()</code> method executes a reducer function (that you provide) on each member of the array resulting in a single output value.</p>
+            <div class="demo-code">
+                <pre class="hljs">
+                    <code class="language-js">
+                        const result = [1, 2, 3, 4].reduce((sum ,i) => sum + i);
+                        console.log(result); // 10
+                    </code>
+                </pre>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
     </footer>
 </body>
 
-<script>
+<script type="text/javascript" src="../assets/prism/prism.js"></script>
+<script type="text/javascript">
     const result = [1, 2, 3, 4].reduce((sum ,i) => sum + i);
     console.log(result);
 </script>
