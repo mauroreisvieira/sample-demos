@@ -4,18 +4,34 @@
     <meta charset="utf-8" />
     <title>Read Only Properties</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/prism/prism.css">
     <link rel="stylesheet" href="../assets/styles/main.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Read Only Properties</h1>
-            <a href="../index.html" title="back">👈</a>
+            <div class="logo">Sample Demos</div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <div class="hero">
+        <div class="container">
+            <h1>Read Only Properties</h1>
+        </div>
+    </div>
     <main class="container">
-        <h3>Cookbook:</h3>
-        <pre>
+        <section>
+            <h2>Object.defineProperty()</h2>
+            <p>The static method <code>Object.defineProperty()</code> defines a new property directly on an object, or modifies an existing property on an object, and returns the object.</p>
+            <div class="demo-code">
+<pre class="hljs">
+    <code class="language-js">
         const person = {
             name: 'Jane Doe',
             age: 28,
@@ -29,13 +45,17 @@
 
         person.born = 'France'
         console.log(person); // {name: "Mauro", age: 28, occupation: "Web Developer", born: "Portugal"}
-        </pre>
+    </code>
+</pre>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
     </footer>
 </body>
 
+<script type="text/javascript" src="../assets/prism/prism.js"></script>
 <script type="text/javascript">
     const person = {
         name: 'Mauro',

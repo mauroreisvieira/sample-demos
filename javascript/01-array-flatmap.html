@@ -4,18 +4,35 @@
     <meta charset="utf-8" />
     <title>Array flatMap()</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/prism/prism.css">
     <link rel="stylesheet" href="../assets/styles/main.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Array flatMap()</h1>
-            <a href="../index.html" title="back">👈</a>
+            <div class="logo">Sample Demos</div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+    <div class="hero">
+        <div class="container">
+            <h1>Array flatMap()</h1>
+        </div>
+    </div>
     <main class="container">
-        <h3>Cookbook:</h3>
-        <pre>
+        <section>
+            <h2>Array.prototype.flatMap()</h2>
+            <p>The <code>flatMap()</code> method first maps each element using a mapping function, then flattens the result into a new array.</p>
+            <p>It is identical to a map followed by a flat of depth 1, but flatMap is often quite useful, as merging both into one method is slightly more efficient.</p>
+            <div class="demo-code">
+<pre class="hljs">
+    <code class="language-js">
         const pairs = [
             [2, 6],
             [8, 2],
@@ -37,14 +54,18 @@
             ];
         })
         console.log(result); // [8, 10, 14]
-        </pre>
+    </code>
+</pre>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
     </footer>
 </body>
 
-<script>
+<script type="text/javascript" src="../assets/prism/prism.js"></script>
+<script type="text/javascript">
     const pairs = [
         [2, 6],
         [8, 2],

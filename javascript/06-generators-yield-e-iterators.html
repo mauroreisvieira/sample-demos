@@ -35,49 +35,49 @@
                 <li><code>done</code> which is true if the last value in the sequence has already been consumed</li>
             </ul>
             <div class="demo-code">
-                <pre class="hljs">
-                    <code class="language-js">
-                        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-                        let it = arr[Symbol.iterator]();
-                        console.log(it.next().value); // 1
-                        console.log(it.next().value); // 2
-                        console.log(it.next().value); // 3
-                        console.log(it.next().value); // 4
+<pre class="hljs">
+    <code class="language-js">
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let it = arr[Symbol.iterator]();
+        console.log(it.next().value); // 1
+        console.log(it.next().value); // 2
+        console.log(it.next().value); // 3
+        console.log(it.next().value); // 4
 
-                        function* subTopics() {
-                            yield "B1";
-                            yield "B2";
-                            yield "B3";
-                        }
+        function* subTopics() {
+            yield "B1";
+            yield "B2";
+            yield "B3";
+        }
 
-                        function* topics() {
-                            yield "A";
-                            yield "B";
-                            yield* subTopics();
-                            yield "C";
-                        }
+        function* topics() {
+            yield "A";
+            yield "B";
+            yield* subTopics();
+            yield "C";
+        }
 
-                        var iterator = topics();
+        var iterator = topics();
 
-                        console.log(iterator.next()); // { value: "A", done: false }
-                        console.log(iterator.next()); // { value: "B", done: false }
-                        console.log(iterator.next()); // { value: "B1", done: false }
-                        console.log(iterator.next()); // { value: "B2", done: false }
-                        console.log(iterator.next()); // { value: "B3", done: false }
-                        console.log(iterator.next()); // { value: "C", done: false }
-                        console.log(iterator.next()); // { value: undefined, done: true }
+        console.log(iterator.next()); // { value: "A", done: false }
+        console.log(iterator.next()); // { value: "B", done: false }
+        console.log(iterator.next()); // { value: "B1", done: false }
+        console.log(iterator.next()); // { value: "B2", done: false }
+        console.log(iterator.next()); // { value: "B3", done: false }
+        console.log(iterator.next()); // { value: "C", done: false }
+        console.log(iterator.next()); // { value: undefined, done: true }
 
-                        function* topics() {
-                            yield* [1, 2, 3];
-                        }
+        function* topics() {
+            yield* [1, 2, 3];
+        }
 
-                        var iterator = topics();
-                        console.log(iterator.next()); // { value: 1, done: false }
-                        console.log(iterator.next()); // { value: 2, done: false }
-                        console.log(iterator.next()); // { value: 3, done: false }
-                        console.log(iterator.next()); // { value: undefined, done: true }
-                    </code>
-                </pre>
+        var iterator = topics();
+        console.log(iterator.next()); // { value: 1, done: false }
+        console.log(iterator.next()); // { value: 2, done: false }
+        console.log(iterator.next()); // { value: 3, done: false }
+        console.log(iterator.next()); // { value: undefined, done: true }
+    </code>
+</pre>
             </div>
         </section>
     </main>
