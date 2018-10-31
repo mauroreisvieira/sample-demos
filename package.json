@@ -7,8 +7,5 @@
     "repository": "https://github.com/maurovieirareis/sample-demos",
     "scripts": {
         "start": "http-server"
-    },
-    "dependencies": {
-        "bower": "^1.8.4"
     }
 }

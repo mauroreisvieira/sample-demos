@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>Generators, yield e iterators</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/prism/prism.css">
     <link rel="stylesheet" href="../assets/styles/main.css">
 </head>
 <body>
@@ -14,54 +15,61 @@
         </div>
     </header>
     <main class="container">
-        <h3>Cookbook:</h3>
-        <pre>
-        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-        let it = arr[Symbol.iterator]();
-        console.log(it.next().value); // 1
-        console.log(it.next().value); // 2
-        console.log(it.next().value); // 3
-        console.log(it.next().value); // 4
+        <section>
+            <h3>Cookbook:</h3>
+            <div class="demo-code">
+                <pre class="hljs">
+                    <code class="language-js">
+                        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+                        let it = arr[Symbol.iterator]();
+                        console.log(it.next().value); // 1
+                        console.log(it.next().value); // 2
+                        console.log(it.next().value); // 3
+                        console.log(it.next().value); // 4
 
-        function* subTopics() {
-            yield "B1";
-            yield "B2";
-            yield "B3";
-        }
+                        function* subTopics() {
+                            yield "B1";
+                            yield "B2";
+                            yield "B3";
+                        }
 
-        function* topics() {
-            yield "A";
-            yield "B";
-            yield* subTopics();
-            yield "C";
-        }
+                        function* topics() {
+                            yield "A";
+                            yield "B";
+                            yield* subTopics();
+                            yield "C";
+                        }
 
-        var iterator = topics();
+                        var iterator = topics();
 
-        console.log(iterator.next()); // { value: "A", done: false }
-        console.log(iterator.next()); // { value: "B", done: false }
-        console.log(iterator.next()); // { value: "B1", done: false }
-        console.log(iterator.next()); // { value: "B2", done: false }
-        console.log(iterator.next()); // { value: "B3", done: false }
-        console.log(iterator.next()); // { value: "C", done: false }
-        console.log(iterator.next()); // { value: undefined, done: true }
+                        console.log(iterator.next()); // { value: "A", done: false }
+                        console.log(iterator.next()); // { value: "B", done: false }
+                        console.log(iterator.next()); // { value: "B1", done: false }
+                        console.log(iterator.next()); // { value: "B2", done: false }
+                        console.log(iterator.next()); // { value: "B3", done: false }
+                        console.log(iterator.next()); // { value: "C", done: false }
+                        console.log(iterator.next()); // { value: undefined, done: true }
 
-        function* topics() {
-            yield* [1, 2, 3];
-        }
+                        function* topics() {
+                            yield* [1, 2, 3];
+                        }
 
-        var iterator = topics();
-        console.log(iterator.next()); // { value: 1, done: false }
-        console.log(iterator.next()); // { value: 2, done: false }
-        console.log(iterator.next()); // { value: 3, done: false }
-        console.log(iterator.next()); // { value: undefined, done: true }
-        </pre>
+                        var iterator = topics();
+                        console.log(iterator.next()); // { value: 1, done: false }
+                        console.log(iterator.next()); // { value: 2, done: false }
+                        console.log(iterator.next()); // { value: 3, done: false }
+                        console.log(iterator.next()); // { value: undefined, done: true }
+                    </code>
+                </pre>
+            </div>
+        </section>
     </main>
     <footer>
         <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
     </footer>
 </body>
 
+<script type="text/javascript" src="../assets/prism/prism.js"></script>
 <script type="text/javascript">
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     let it = arr[Symbol.iterator]();
