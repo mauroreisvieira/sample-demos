@@ -8,9 +8,31 @@
 </head>
 <body>
     <header>
+     <div class="container">
         <h1>Destructing objects & arrays</h1>
         <a href="../index.html" title="back">👈</a>
+    </div>
     </header>
+    <main class="container">
+        <h3>Cookbook:</h3>
+        <pre>
+        function logUser({email, name = 'anonymous', age}) {
+            console.log(name, age)
+        }
+
+        logUser({name: 'Doe', age: 20});
+        logUser({age: 40});
+
+        const coords = [230, 500];
+        const [x = 0, y = 0] = coords;
+
+        console.log(x);
+        console.log(y);
+        </pre>
+    </main>
+    <footer>
+        <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
+    </footer>
 </body>
 
 <script>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Read Only Properties</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Read Only Properties</h1>
+            <a href="../index.html" title="back">👈</a>
+        </div>
+    </header>
+    <main class="container">
+        <h3>Cookbook:</h3>
+        <pre>
+        const person = {
+            name: 'Jane Doe',
+            age: 28,
+            occupation: 'Web Developer'
+        }
+
+        Object.defineProperty(person, 'born', {
+            value: 'Portugal',
+            writable: false
+        });
+
+        person.born = 'France'
+        console.log(person); // {name: "Mauro", age: 28, occupation: "Web Developer", born: "Portugal"}
+        </pre>
+    </main>
+    <footer>
+        <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
+    </footer>
+</body>
+
+<script type="text/javascript">
+    const person = {
+        name: 'Mauro',
+        age: 28,
+        occupation: 'Web Developer'
+    }
+
+    Object.defineProperty(person, 'born', {
+        value: 'Portugal',
+        writable: false
+    });
+
+    person.born = 'Brazil'
+    console.log(person);
+</script>
+</html>
