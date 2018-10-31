@@ -78,7 +78,7 @@ button[disabled]:hover {
 }
 
 .list {
-    list-style-type: square;
+    list-style-type: none;
     margin-bottom: 2rem;
 }
 
