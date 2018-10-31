@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>ECMAScript 2018</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/components/prism/themes/prism.css">
     <link rel="stylesheet" href="../assets/styles/main.css">
 </head>
 <body>
@@ -16,55 +17,71 @@
     <main class="container">
         <section>
             <h4>Delete value in object</h4>
-            <pre>
-            const user = {
-                filename: 'Jone',
-                lastName: 'Doe',
-                city: 'Roma',
-                email: 'hi@mail.com'
-            }
-            delete user.filename;
-            console.log(user) // {lastName: "Doe", city: "Roma", email: "hi@mail.com"}
-            </pre>
+            <div class="demo-code">
+                <pre class="hljs">
+                    <code class="language-js">
+                        const user = {
+                            filename: 'Jone',
+                            lastName: 'Doe',
+                            city: 'Roma',
+                            email: 'hi@mail.com'
+                        }
+                        delete user.filename;
+                        console.log(user) // {lastName: "Doe", city: "Roma", email: "hi@mail.com"}
+                    </code>
+                </pre>
+            </div>
         </section>
 
         <section>
             <h4>Asynchronous iterator</h4>
             <p>Next method returns a Promise.</p>
-            <pre>
-            const { value, done } = syncIterator.next();
-            asyncIterator.next().then(({ value, done }) => /* ... */);
-            </pre>
+            <div class="demo-code">
+                <pre class="hljs">
+                    <code class="language-js">
+                        const { value, done } = syncIterator.next();
+                        asyncIterator.next().then(({ value, done }) => /* ... */);
+                    </code>
+                </pre>
+            </div>
         </section>
 
         <section>
             <h4>Await</h4>
             <p>Iterates iterate objects asynchronously.</p>
-            <pre>
-            for await (const line of readLines(filePath)) {
-              console.log(line);
-            }
+            <div class="demo-code">
+                <pre class="hljs">
+                    <code class="language-js">
+                    for await (const line of readLines(filePath)) {
+                        console.log(line);
+                    }
+                </code>
             </pre>
+            </div>
         </section>
 
         <section>
             <h4>Destructuring assignment</h4>
             <p>Decompress arrays or object properties and assign them to new variables.</p>
-            <pre>
-            var a, b, rest;
-            [a, b] = [10, 20];
+            <div class="demo-code">
+                <pre class="hljs">
+                    <code class="language-js">
+                        var a, b, rest;
+                        [a, b] = [10, 20];
 
-            console.log(a);
-            // expected output: 10
+                        console.log(a);
+                        // expected output: 10
 
-            console.log(b);
-            // expected output: 20
+                        console.log(b);
+                        // expected output: 20
 
-            [a, b, ...rest] = [10, 20, 30, 40, 50];
+                        [a, b, ...rest] = [10, 20, 30, 40, 50];
 
-            console.log(rest);
-            // expected output: [30,40,50]
-            </pre>
+                        console.log(rest);
+                        // expected output: [30,40,50]
+                    </code>
+                </pre>
+            </div>
         </section>
     </main>
     <footer>
@@ -72,7 +89,8 @@
     </footer>
 </body>
 
-<script>
+<script type="text/javascript" src="../assets/components/prism/prism.js"></script>
+<script type="text/javascript">
     const user = {
         filename: 'Jone',
         lastName: 'Doe',

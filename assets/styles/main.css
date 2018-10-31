@@ -7,6 +7,10 @@
     --textColor: #333;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 html {
     font-family: sans-serif;
     font-size: var(--fontSize);
@@ -18,22 +22,14 @@ body {
     font-size: .875rem;
 }
 
-pre,
-code {
-    font-size: .9rem;
-    background: var(--whiteSmoke);
+.demo-code {
+    margin: 2rem 0;
     border: 1px solid var(--hawkesBlue);
-    padding: 1rem 0 0;
     border-radius: 6px;
-    line-height: 1.5;
-    color: #000;
-    font-family: Consolas, Monaco, monospace;
-    text-align: left;
-    word-spacing: normal;
-    word-break: normal;
-    word-wrap: normal;
-    tab-size: 4;
-    hyphens: none;
+}
+
+.demo-code pre {
+    margin: 0;
 }
 
 main {
@@ -44,8 +40,10 @@ main {
 .container {
     display: flex;
     flex-direction: column;
-    width: 1024px;
+    max-width: 1024px;
+    width: 100%;
     margin: auto;
+    padding: 0 16px;
 }
 
 header {
