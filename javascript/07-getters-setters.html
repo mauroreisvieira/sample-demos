@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Classes: Getters & Setters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/components/prism/themes/prism.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Classes: Getters & Setters</h1>
+            <a href="../index.html" title="back">👈</a>
+        </div>
+    </header>
+    <main class="container">
+        <h3>Cookbook:</h3>
+        <div class="demo-code">
+            <pre class="hljs">
+                <code class="language-js">
+                    class Rectangle {
+                        constructor(width, height, color) {
+                            this.__width = width;
+                            this.__height = height;
+                            this.__color = color;
+                        }
+
+                        get area () {
+                            return this.__width + this.__height
+                        }
+
+                        get color () {
+                            return this.__color;
+                        }
+
+                        set color (color) {
+                            this.__color = color;
+                        }
+                    }
+                </code>
+            </pre>
+        </div>
+        <h3>Usage:</h3>
+        <div class="demo-code">
+            <pre class="hljs">
+                <code class="language-js">
+                    const rect = new Rectangle(10, 20, 'red')
+                    console.log('Area:', rect.area);
+                    console.log('Initial Color', rect.color);
+                    rect.color = 'blue';
+                    console.log('New Color:', rect.color);
+                </code>
+            </pre>
+        </div>
+    </main>
+    <footer>
+        <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
+    </footer>
+</body>
+<script type="text/javascript" src="../assets/components/prism/prism.js"></script>
+<script type="text/javascript">
+    class Rectangle {
+        constructor(width, height, color) {
+            this.__width = width;
+            this.__height = height;
+            this.__color = color;
+        }
+
+        get area () {
+            return this.__width + this.__height
+        }
+
+        get color () {
+            return this.__color;
+        }
+
+        set color (color) {
+            this.__color = color;
+        }
+    }
+
+    const rect = new Rectangle(10, 20, 'red')
+    console.log('Area:', rect.area);
+    console.log('Initial Color', rect.color);
+    rect.color = 'blue';
+    console.log('New Color:', rect.color);
+</script>
+</html>
