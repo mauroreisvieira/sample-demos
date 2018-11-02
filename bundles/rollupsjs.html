@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Rollup js</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../assets/prism/prism.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Sample Demos</div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <h1>Rollup js</h1>
+        </div>
+    </div>
+    <main class="container">
+        <section>
+            <h2>Rollup</h2>
+            <p>Is a module bundler for JavaScript which compiles small pieces of code into something larger and more complex, such as a library or application.</p>
+            <p>It uses the new standardized format for code modules included in the ES6 revision of JavaScript, instead of previous idiosyncratic solutions such as CommonJS and AMD. ES6 modules let you freely and seamlessly combine the most useful individual functions from your favorite libraries.</p>
+            <p>This will eventually be possible natively, but <strong>Rollup</strong> lets you do it today.</p>
+        </section>
+        <section>
+            <h2>Quick start</h2>
+            <p>Install with <code>npm install --global rollup</code></p>
+            <div class="demo-code">
+<pre class="hljs"
+    <code class="language-powershell">
+rollup main.js --file bundle.js --format cjs
+    </code>
+</pre>
+            </div>
+        </section>
+        <section>
+            <h2>Configuration Files</h2>
+            <p>Rollup configuration files are optional, but they are powerful and convenient and thus <strong>recommended</strong>.</p>
+            <p>A config file is an ES6 module that exports a default object with the desired options. Typically, it is called <code>rollup.config.js</code> and sits in the root directory of your project.</p>
+            <div class="demo-code">
+<pre class="hljs">
+    <code class="language-js">
+module.exports = {
+  input: 'src/main.js',
+  output: {
+    file: 'bundle.js',
+    format: 'cjs'
+  }
+};
+    </code>
+</pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
+    </footer>
+</body>
+
+<script type="text/javascript" src="../assets/prism/prism.js"></script>
+<script type="text/javascript">
+    const rtf = new Intl.RelativeTimeFormat('it');
+    rtf.format(3.14, 'second'); // → 'in 3.14 seconds'
+    rtf.format(-15, 'minute'); // '15 minutes ago'
+    rtf.format(8, 'hour'); // 'in 8 hours'
+    rtf.format(-2, 'day'); // '2 days ago'
+    rtf.format(3, 'week'); // 'in 3 weeks'
+    rtf.format(-5, 'month'); // '5 months ago'
+    rtf.format(2, 'quarter'); // 'in 2 quarters'
+    rtf.format(-42, 'year'); // '42 years ago'
+</script>
+</html>
