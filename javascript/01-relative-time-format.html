@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Array flatMap()</title>
+    <title>Relative Time Format</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../assets/prism/prism.css">
     <link rel="stylesheet" href="../assets/styles/main.css">
@@ -22,38 +22,26 @@
     </header>
     <div class="hero">
         <div class="container">
-            <h1>Array flatMap()</h1>
+            <h1>Relative Time Format</h1>
         </div>
     </div>
     <main class="container">
         <section>
-            <h2>Array flatMap()</h2>
-            <p>The <code>flatMap()</code> method first maps each element using a mapping function, then flattens the result into a new array.</p>
-            <p>It is identical to a map followed by a flat of depth 1, but flatMap is often quite useful, as merging both into one method is slightly more efficient.</p>
+            <h2>Intl.RelativeTimeFormat API</h2>
+            <p>The brand new <code>Intl.RelativeTimeFormat</code> <strong>API</strong> shifts that burden to the JavaScript engine, which can ship the locale data and make it directly available to JavaScript developers.</p>
+            <p><code>Intl.RelativeTimeFormat</code> enables localized formatting of relative times without sacrificing performance.</p>
             <div class="demo-code">
 <pre class="hljs">
     <code class="language-js">
-        const pairs = [
-            [2, 6],
-            [8, 2],
-            [5, 9]
-        ];
-
-        let result = [];
-
-        result = pairs.map((pair) => {
-            return [
-            pair[0] + pair[1]
-            ];
-        })
-        console.log(result); // [Array(1), Array(1), Array(1)]
-
-        result = pairs.flatMap((pair, index) => {
-            return [
-            pair[0] + pair[1]
-            ];
-        })
-        console.log(result); // [8, 10, 14]
+const rtf = new Intl.RelativeTimeFormat('it');
+rtf.format(3.14, 'second'); // 'in 3.14 seconds'
+rtf.format(-15, 'minute'); // '15 minutes ago'
+rtf.format(8, 'hour'); // 'in 8 hours'
+rtf.format(-2, 'day'); // '2 days ago'
+rtf.format(3, 'week'); // 'in 3 weeks'
+rtf.format(-5, 'month'); // '5 months ago'
+rtf.format(2, 'quarter'); // 'in 2 quarters'
+rtf.format(-42, 'year'); // '42 years ago'
     </code>
 </pre>
             </div>
@@ -66,26 +54,14 @@
 
 <script type="text/javascript" src="../assets/prism/prism.js"></script>
 <script type="text/javascript">
-    const pairs = [
-        [2, 6],
-        [8, 2],
-        [5, 9]
-    ];
-
-    let result = [];
-
-    result = pairs.map((pair) => {
-        return [
-        pair[0] + pair[1]
-        ];
-    })
-    console.log(result);
-
-    result = pairs.flatMap((pair, index) => {
-        return [
-        pair[0] + pair[1]
-        ];
-    })
-    console.log(result);
+    const rtf = new Intl.RelativeTimeFormat('it');
+    rtf.format(3.14, 'second'); // → 'in 3.14 seconds'
+    rtf.format(-15, 'minute'); // '15 minutes ago'
+    rtf.format(8, 'hour'); // 'in 8 hours'
+    rtf.format(-2, 'day'); // '2 days ago'
+    rtf.format(3, 'week'); // 'in 3 weeks'
+    rtf.format(-5, 'month'); // '5 months ago'
+    rtf.format(2, 'quarter'); // 'in 2 quarters'
+    rtf.format(-42, 'year'); // '42 years ago'
 </script>
 </html>
