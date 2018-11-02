@@ -3,6 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <title>Relative Time Format</title>
+    <link rel="icon" href="/assets/images/logo.png" type="image/png">
+    <meta name="msapplication-TileColor" content="#9266CC">
+    <meta name="theme-color" content="#9266CC">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../assets/prism/prism.css">
     <link rel="stylesheet" href="../assets/styles/main.css">
@@ -33,7 +36,7 @@
             <div class="demo-code">
 <pre class="hljs">
     <code class="language-js">
-const rtf = new Intl.RelativeTimeFormat('it');
+const rtf = new Intl.RelativeTimeFormat('en');
 rtf.format(3.14, 'second'); // 'in 3.14 seconds'
 rtf.format(-15, 'minute'); // '15 minutes ago'
 rtf.format(8, 'hour'); // 'in 8 hours'
@@ -54,7 +57,7 @@ rtf.format(-42, 'year'); // '42 years ago'
 
 <script type="text/javascript" src="../assets/prism/prism.js"></script>
 <script type="text/javascript">
-    const rtf = new Intl.RelativeTimeFormat('it');
+    const rtf = new Intl.RelativeTimeFormat('en');
     rtf.format(3.14, 'second'); // → 'in 3.14 seconds'
     rtf.format(-15, 'minute'); // '15 minutes ago'
     rtf.format(8, 'hour'); // 'in 8 hours'
