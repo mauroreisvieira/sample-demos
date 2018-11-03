@@ -2,24 +2,6 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import home from '../pages/home'
 import pages from '../pages/pages'
-// Javascript
-import relativeTimeFormat from '../pages/javascript/relative-time-format'
-import breakOutOfNestedLoops from '../pages/javascript/break-out-of-nested-loops'
-import destructingObjectsAndArrays from '../pages/javascript/destructing-objects-and-arrays'
-import readOnlyProperties from '../pages/javascript/read-only-properties'
-import generatorsYieldAndIterators from '../pages/javascript/generators-yield-and-iterators'
-import gettersSetters from '../pages/javascript/getters-setters'
-import arrayFilter from '../pages/javascript/array-filter'
-import arrayFlatMap from '../pages/javascript/array-flatmap'
-import arrayReduce from '../pages/javascript/array-reduce'
-import arraySort from '../pages/javascript/array-sort'
-// CSS Tips
-import textFillEffect from '../pages/css-tips/text-fill-effect'
-// Rollup JS
-import rollupsjs from '../pages/bundles/rollupsjs'
-// ECMA Script
-import es2017 from '../pages/ecma-script/es2017'
-import es2018 from '../pages/ecma-script/es2018'
 
 Vue.use(Router)
 
@@ -38,65 +20,65 @@ export default new Router({
         // CSS Tips
         {
             path: '/css-tips/text-fill-effect',
-            name: 'text-fill-effect',
-            component: textFillEffect
+            name: 'Text Stroke & Fill Color',
+            component: pages
         },
         // Rollup JS
         {
             path: '/bundles/rollupsjs',
-            name: 'rollupsjs',
-            component: rollupsjs
+            name: 'Rollup.js Bundle',
+            component: pages
         },
         // Javascript
         {
             path: '/javascript/relative-time-format',
             name: 'relative-time-format',
-            component: relativeTimeFormat
+            component: pages
         },
         {
             path: '/javascript/break-out-of-nested-loops',
             name: 'break-out-of-nested-loops',
-            component: breakOutOfNestedLoops
+            component: pages
         },
         {
             path: '/javascript/destructing-objects-and-arrays',
             name: 'destructing-objects-and-arrays',
-            component: destructingObjectsAndArrays
+            component: pages
         },
         {
             path: '/javascript/read-only-properties',
             name: 'read-only-properties',
-            component: readOnlyProperties
+            component: pages
         },
         {
             path: '/javascript/generators-yield-and-iterators',
             name: 'generators-yield-and-iterators',
-            component: generatorsYieldAndIterators
+            component: pages
         },
         {
             path: '/javascript/getters-setters',
             name: 'getters-setters',
-            component: gettersSetters
+            component: pages
         },
         {
             path: '/javascript/array-filter',
             name: 'array-filter',
-            component: arrayFilter
+            component: pages
         },
         {
             path: '/javascript/array-flatmap',
             name: 'array-flatmap',
-            component: arrayFlatMap
+            component: pages
         },
         {
             path: '/javascript/array-reduce',
             name: 'array-reduce',
-            component: arrayReduce
+            component: pages
         },
         {
             path: '/javascript/array-sort',
             name: 'array-sort',
-            component: arraySort
+            component: pages
         },
         // ECMA Script
         {
