@@ -1,64 +1,65 @@
 <template>
-    <main class="container">
-        <section>
-            <h2>🤯 JavaScript Tip's</h2>
-            <list :menus="javaScriptMenu" />
-        </section>
-        <section>
-            <h2>🔮 JavaScript Custom Elements</h2>
-            <list :menus="customElementsMenu" />
-        </section>
-        <section>
-            <h2>🎉 ECMAScript Next</h2>
-            <list :menus="ecmaScriptMenu" />
-        </section>
-        <section>
-            <h2>🦄 CSS Tip's</h2>
-            <list :menus="cssTipsMenu" />
-        </section>
-        <section>
-            <h2>📦 Bundles</h2>
-            <list :menus="bundlesMenu" />
-        </section>
-    </main>
+    <div>
+        <hero title="Modern web development" :tags="['javascript', 'css', 'scss', 'typescript', 'none', 'html', 'tips', 'sublime']" />
+        <main class="container">
+            <div class="card">
+                <h2>🤯 JavaScript Tip's</h2>
+                <navigation :menus="javaScriptMenu" />
+            </div>
+            <div class="card">
+                <h2>🔮 JavaScript Custom Elements</h2>
+                <navigation :menus="customElementsMenu" />
+            </div>
+            <div class="card">
+                <h2>🎉 ECMAScript Next</h2>
+                <navigation :menus="ecmaScriptMenu" />
+            </div>
+            <div class="card">
+                <h2>🦄 CSS Tip's</h2>
+                <navigation :menus="cssTipsMenu" />
+            </div>
+            <div class="card">
+                <h2>📦 Bundles</h2>
+                <navigation :menus="bundlesMenu" />
+            </div>
+        </main>
+    </div>
 </template>
 
 <script>
-    import list from '../components/list.vue'
+    import navigation from '../components/navigation.vue'
+    import hero from '../layout/hero.vue'
     export default {
         name: 'home',
-        components: { list },
+        components: { navigation, hero },
         data() {
             return {
                 javaScriptMenu: [
-                { url: 'javascript/01-relative-time-format.html', tilte: '01 - Relative Time Format'},
-                { url: 'javascript/02-break-out-of-nested-loops.html', tilte: '02 - Break out of nested loops'},
-                { url: 'javascript/03-destructing-objects-and-arrays.html', tilte: '03 - Destructing objects & arrays'},
-                { url: 'javascript/04-read-only-properties.html', tilte: '04 - Read Only Properties'},
-                { url: 'javascript/05-getters-setters.html"', tilte: '05 - Getters & Setters'},
-                { url: 'javascript/06-generators-yield-e-iterators.html', tilte: '06 - Generators, yield e iterators'},
-                { url: 'javascript/07-array-reduce.html"', tilte: '07 - Array reduce()'},
-                { url: 'javascript/08-array-sort.html"', tilte: '08 - Array sort()'},
-                { url: 'javascript/09-array-filter.html', tilte: '09 - Array filter()'},
-                { url: 'javascript/10-array-flatmap.html', tilte: '10 - Array flatMap()'}
+                    { url: 'javascript/relative-time-format', tilte: 'Relative Time Format'},
+                    { url: 'javascript/break-out-of-nested-loops', tilte: 'Break out of nested loops'},
+                    { url: 'javascript/destructing-objects-and-arrays', tilte: 'Destructing objects & arrays'},
+                    { url: 'javascript/read-only-properties', tilte: 'Read Only Properties'},
+                    { url: 'javascript/getters-setters"', tilte: 'Getters & Setters'},
+                    { url: 'javascript/generators-yield-e-iterators', tilte: 'Generators, yield e iterators'},
+                    { url: 'javascript/array-reduce"', tilte: 'Array reduce()'},
+                    { url: 'javascript/array-sort"', tilte: 'Array sort()'},
+                    { url: 'javascript/array-filter', tilte: 'Array filter()'},
+                    { url: 'javascript/array-flatmap', tilte: 'Array flatMap()'}
                 ],
                 customElementsMenu: [
-                { url: 'custom-elements/my-element/index.html"', tilte: 'Custom Elements'}
+                    { url: 'custom-elements/my-element/index"', tilte: 'Custom Elements'}
                 ],
                 ecmaScriptMenu: [
-                { url: 'ecma-script/es2017.html', tilte: 'ES2017'},
-                { url: 'ecma-script/es2018.html', tilte: 'ES2018'}
+                    { url: 'ecma-script/es2017', tilte: 'ES2017'},
+                    { url: 'ecma-script/es2018', tilte: 'ES2018'}
                 ],
                 cssTipsMenu: [
-                { url: 'css-tips/text-fill-effect/index.html', tilte: 'Text Fill Effect'}
+                    { url: 'css-tips/text-fill-effect/index', tilte: 'Text Fill Effect'}
                 ],
                 bundlesMenu: [
-                { url: 'bundles/rollupsjs.html', tilte: 'Rollup js'}
+                    { url: 'bundles/rollupsjs', tilte: 'Rollup js'}
                 ]
             }
-        },
-        methods: {},
-        mounted() {
         }
     }
 </script>

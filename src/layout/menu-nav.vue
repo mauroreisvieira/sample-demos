@@ -1,21 +1,15 @@
 <template>
     <nav class="nav">
         <ul class="menu">
-            <li><a href="./">Home</a></li>
-            <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
-            <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+            <li class="menu__item"><router-link to="/" class="menu__link">Home</router-link></li>
+            <li class="menu__item"><a href="https://twitter.com/mauroreisvieira" class="menu__link" target="_blank">Twitter</a></li>
+            <li class="menu__item"><a href="https://github.com/maurovieirareis/sample-demos" class="menu__link" target="_blank">View in GitHub</a></li>
         </ul>
     </nav>
 </template>
 
 <script>
     export default {
-        name: 'menu-nav',
-        data() {
-            return {}
-        },
-        methods: {},
-        mounted() {
-        }
+        name: 'menu-nav'
     }
 </script>

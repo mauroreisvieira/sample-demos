@@ -1,16 +1,9 @@
 <template>
     <div class="hero">
         <div class="container">
-            <h1>Modern web development</h1>
-            <ul class="tags">
-                <li>#javascript</li>
-                <li>#css</li>
-                <li>#scss</li>
-                <li>#typescript</li>
-                <li>#node</li>
-                <li>#html</li>
-                <li>#sublime</li>
-                <li>#tips</li>
+            <h1>{{ title }}</h1>
+            <ul class="tag" v-if="tags">
+                <li class="tag__item" v-for="(tag, index) in tags">#{{tag}}</li>
             </ul>
         </div>
     </div>
@@ -19,11 +12,15 @@
 <script>
     export default {
         name: 'hero',
-        data() {
-            return {}
-        },
-        methods: {},
-        mounted() {
+        props: {
+            title: {
+                type: String,
+                required: true
+            },
+            tags: {
+                type: Array,
+                default: undefined
+            }
         }
     }
 </script>
