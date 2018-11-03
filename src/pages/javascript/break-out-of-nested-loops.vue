@@ -37,7 +37,7 @@
     import hero from './../../layout/hero.vue'
     import demoCode from './../../components/demo-code.vue'
     export default {
-        name: 'relative-time-format',
+        name: 'break-out-of-nested-loops',
         components: { hero, demoCode }
     }
 </script>

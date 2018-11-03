@@ -39,15 +39,15 @@
                     { url: 'javascript/break-out-of-nested-loops', tilte: 'Break out of nested loops'},
                     { url: 'javascript/destructing-objects-and-arrays', tilte: 'Destructing objects & arrays'},
                     { url: 'javascript/read-only-properties', tilte: 'Read Only Properties'},
-                    { url: 'javascript/getters-setters"', tilte: 'Getters & Setters'},
+                    { url: 'javascript/getters-setters', tilte: 'Getters & Setters'},
                     { url: 'javascript/generators-yield-e-iterators', tilte: 'Generators, yield e iterators'},
-                    { url: 'javascript/array-reduce"', tilte: 'Array reduce()'},
-                    { url: 'javascript/array-sort"', tilte: 'Array sort()'},
+                    { url: 'javascript/array-reduce', tilte: 'Array reduce()'},
+                    { url: 'javascript/array-sort', tilte: 'Array sort()'},
                     { url: 'javascript/array-filter', tilte: 'Array filter()'},
                     { url: 'javascript/array-flatmap', tilte: 'Array flatMap()'}
                 ],
                 customElementsMenu: [
-                    { url: 'custom-elements/my-element/index"', tilte: 'Custom Elements'}
+                    { url: 'custom-elements/my-element/index', tilte: 'Custom Elements'}
                 ],
                 ecmaScriptMenu: [
                     { url: 'ecma-script/es2017', tilte: 'ES2017'},

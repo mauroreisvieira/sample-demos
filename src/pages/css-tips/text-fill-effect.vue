@@ -64,6 +64,10 @@
 </script>
 
 <style lang="css">
+.demo-title {
+    display: inline;
+}
+
 .demo-title span {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 2px #000;
@@ -95,7 +99,7 @@
     white-space: nowrap;
 }
 
-.demo-title:hover span::before {
+.demo-title span:hover::before {
     width: 100%;
 }
 
