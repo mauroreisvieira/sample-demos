@@ -23,7 +23,7 @@
           }
       },
         mounted() {
-            this.file = './../docs/' + this.$route.path + '.md';
+            this.file = './../../docs' + this.$route.path + '.md';
             const md = new Remarkable({
                 langPrefix: 'hljs language-'
             });
