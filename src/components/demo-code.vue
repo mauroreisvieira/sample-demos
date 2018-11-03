@@ -17,3 +17,7 @@
         }
     }
 </script>
+
+<style lang="css">
+    @import "../../assets/prism/prism.css";
+</style>
