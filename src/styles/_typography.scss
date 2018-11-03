@@ -23,7 +23,7 @@ h2 {
 
 h2::before {
     display: inline-flex;
-    margin-right: $baseline;
+    margin-right: $baseline / 2;
     font-size: $fontLarge;
     color: $colorGrayKeyline;
     content: '#';

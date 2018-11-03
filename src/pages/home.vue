@@ -54,7 +54,7 @@
                     { url: 'ecma-script/es2018', tilte: 'ES2018'}
                 ],
                 cssTipsMenu: [
-                    { url: 'css-tips/text-fill-effect/index', tilte: 'Text Fill Effect'}
+                    { url: 'css-tips/text-fill-effect', tilte: 'Text Fill Effect'}
                 ],
                 bundlesMenu: [
                     { url: 'bundles/rollupsjs', tilte: 'Rollup js'}

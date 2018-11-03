@@ -1,0 +1,23 @@
+.hljs {
+    margin: 0 !important;
+}
+
+.demo-code {
+    margin: $baseline * 2 0;
+    font-size: $fontSmall;
+    border-top: 6px solid $colorPink;
+}
+
+.demo-code pre {
+    margin: 0;
+}
+
+code {
+    background: $colorWhiteSomke;
+    color: $colorPink;
+    border-radius: 2px;
+    font-family: Consolas, monospace;
+    display: inline-block;
+    padding: 0 $baseline / 4;
+}
+
