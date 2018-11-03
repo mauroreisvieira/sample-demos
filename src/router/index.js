@@ -5,6 +5,8 @@ import relativeTimeFormat from '../pages/javascript/relative-time-format'
 import breakOutOfNestedLoops from '../pages/javascript/break-out-of-nested-loops'
 // CSS Tips
 import textFillEffect from '../pages/css-tips/text-fill-effect'
+// Rollup JS
+import rollupsjs from '../pages/bundles/rollupsjs'
 // ECMA Script
 import es2017 from '../pages/ecma-script/es2017'
 import es2018 from '../pages/ecma-script/es2018'
@@ -28,6 +30,12 @@ export default new Router({
             path: '/css-tips/text-fill-effect',
             name: 'text-fill-effect',
             component: textFillEffect
+        },
+        // Rollup JS
+        {
+            path: '/bundles/rollupsjs',
+            name: 'rollupsjs',
+            component: rollupsjs
         },
         // Javascript
         {
