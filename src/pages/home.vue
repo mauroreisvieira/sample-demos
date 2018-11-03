@@ -6,10 +6,10 @@
                 <h2>🤯 JavaScript Tip's</h2>
                 <navigation :menus="javaScriptMenu" />
             </div>
-            <div class="card">
+<!--             <div class="card">
                 <h2>🔮 JavaScript Custom Elements</h2>
                 <navigation :menus="customElementsMenu" />
-            </div>
+            </div> -->
             <div class="card">
                 <h2>🎉 ECMAScript Next</h2>
                 <navigation :menus="ecmaScriptMenu" />
@@ -40,7 +40,7 @@
                     { url: 'javascript/destructing-objects-and-arrays', tilte: 'Destructing objects & arrays'},
                     { url: 'javascript/read-only-properties', tilte: 'Read Only Properties'},
                     { url: 'javascript/getters-setters', tilte: 'Getters & Setters'},
-                    { url: 'javascript/generators-yield-e-iterators', tilte: 'Generators, yield e iterators'},
+                    { url: 'javascript/generators-yield-and-iterators', tilte: 'Generators, yield & iterators'},
                     { url: 'javascript/array-reduce', tilte: 'Array reduce()'},
                     { url: 'javascript/array-sort', tilte: 'Array sort()'},
                     { url: 'javascript/array-filter', tilte: 'Array filter()'},

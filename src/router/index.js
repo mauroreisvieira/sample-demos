@@ -6,6 +6,7 @@ import relativeTimeFormat from '../pages/javascript/relative-time-format'
 import breakOutOfNestedLoops from '../pages/javascript/break-out-of-nested-loops'
 import destructingObjectsAndArrays from '../pages/javascript/destructing-objects-and-arrays'
 import readOnlyProperties from '../pages/javascript/read-only-properties'
+import generatorsYieldAndIterators from '../pages/javascript/generators-yield-and-iterators'
 import gettersSetters from '../pages/javascript/getters-setters'
 import arrayFilter from '../pages/javascript/array-filter'
 import arrayFlatMap from '../pages/javascript/array-flatmap'
@@ -65,6 +66,11 @@ export default new Router({
             path: '/javascript/read-only-properties',
             name: 'read-only-properties',
             component: readOnlyProperties
+        },
+        {
+            path: '/javascript/generators-yield-and-iterators',
+            name: 'generators-yield-and-iterators',
+            component: generatorsYieldAndIterators
         },
         {
             path: '/javascript/getters-setters',
