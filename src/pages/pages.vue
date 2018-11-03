@@ -23,6 +23,7 @@
           }
       },
         mounted() {
+            console.log(window.location);
             this.file = window.location.origin + '/docs' + this.$route.path + '.md';
             const md = new Remarkable({
                 langPrefix: 'hljs language-'
