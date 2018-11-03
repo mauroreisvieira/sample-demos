@@ -24,7 +24,7 @@
       },
         mounted() {
             console.log(window.location);
-            this.file = window.location.origin + '/docs' + this.$route.path + '.md';
+            this.file = window.location.origin + window.location.pathname + 'docs' + this.$route.path + '.md';
             const md = new Remarkable({
                 langPrefix: 'hljs language-'
             });
