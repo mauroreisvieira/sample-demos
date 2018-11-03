@@ -1,15 +1,8 @@
-.hljs {
-    margin: 0 !important;
-}
-
-.demo-code {
-    margin: $baseline * 2 0;
+pre {
+    margin: $baseline * 2 0 !important;
+    padding: $baseline * 2 0 !important;
     font-size: $fontSmall;
     border-top: 6px solid $colorPink;
-}
-
-.demo-code pre {
-    margin: 0;
 }
 
 code {

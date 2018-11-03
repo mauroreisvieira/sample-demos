@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import home from '../pages/home'
+import pages from '../pages/pages'
 // Javascript
 import relativeTimeFormat from '../pages/javascript/relative-time-format'
 import breakOutOfNestedLoops from '../pages/javascript/break-out-of-nested-loops'
@@ -100,13 +101,13 @@ export default new Router({
         // ECMA Script
         {
             path: '/ecma-script/es2017',
-            name: 'es2017',
-            component: es2017
+            name: 'ESCMAScript 2017',
+            component: pages
         },
         {
             path: '/ecma-script/es2018',
-            name: 'es2018',
-            component: es2018
+            name: 'ESCMAScript 2018',
+            component: pages
         }
     ]
 })

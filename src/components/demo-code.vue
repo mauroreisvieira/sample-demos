@@ -9,7 +9,7 @@
 </template>
 
 <script>
-    import  Prism from 'prismjs'
+
     export default {
         name: 'demo-code',
         props: {

@@ -1,5 +1,3 @@
-# Array sort()
-
 ## JavaScript Array sort()
 The `sort()` method sorts the elements of an array in place and returns the array.
 Javascript sort algorithm on V8 is now stable. The default sort order is according to string Unicode code points.
