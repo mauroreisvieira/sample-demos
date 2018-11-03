@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Classes: Getters & Setters</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="msapplication-TileColor" content="#9266CC">
+    <meta name="theme-color" content="#9266CC">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/logo.ico">
+    <link rel="icon" href="../assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../assets/prism/prism.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="Sample Demos">
+                Sample Demos
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <h1>Classes: Getters & Setters</h1>
+        </div>
+    </div>
+    <main class="container">
+        <section>
+            <h2>Class declarations</h2>
+            <p>One way to define a class is using a class declaration.</p>
+            <p>To declare a class, you use the class keyword with the name of the <code>class</code> ("Rectangle" here).</p>
+            <div class="demo-code">
+<pre class="hljs">
+    <code class="language-js">
+        class Rectangle {
+            constructor(width, height, color) {
+                this.__width = width;
+                this.__height = height;
+                this.__color = color;
+            }
+
+            get area () {
+                return this.__width + this.__height
+            }
+
+            get color () {
+                return this.__color;
+            }
+
+            set color (color) {
+                this.__color = color;
+            }
+        }
+
+        const rect = new Rectangle(10, 20, 'red')
+        console.log('Area:', rect.area);
+        console.log('Initial Color', rect.color);
+        rect.color = 'blue';
+        console.log('New Color:', rect.color);
+    </code>
+</pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
+    </footer>
+</body>
+<script type="text/javascript" src="../assets/prism/prism.js"></script>
+<script type="text/javascript">
+    class Rectangle {
+        constructor(width, height, color) {
+            this.__width = width;
+            this.__height = height;
+            this.__color = color;
+        }
+
+        get area () {
+            return this.__width + this.__height
+        }
+
+        get color () {
+            return this.__color;
+        }
+
+        set color (color) {
+            this.__color = color;
+        }
+    }
+
+    const rect = new Rectangle(10, 20, 'red')
+    console.log('Area:', rect.area);
+    console.log('Initial Color', rect.color);
+    rect.color = 'blue';
+    console.log('New Color:', rect.color);
+</script>
+</html>

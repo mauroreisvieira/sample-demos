@@ -1,0 +1,36 @@
+.demo-title {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px var(--pinkPanther);
+    color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 6rem;
+    font-weight: 700;
+    font-weight: normal;
+    letter-spacing: 0.5rem;
+    position: relative;
+    text-fill-color: transparent;
+    text-stroke: 2px var(--pinkPanther);
+    text-transform: uppercase;
+}
+
+.demo-title span::before {
+    -webkit-text-fill-color: currentColor;
+    -webkit-text-stroke: 0;
+    color: var(--pinkPanther);
+    content: attr(data-hover);
+    width: 0;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    text-fill-color: currentColor;
+    text-stroke: 0;
+    top: 0;
+    transition: all .33s cubic-bezier(0.2, 1, 0.8, 1);
+    white-space: nowrap;
+}
+
+.demo-title:hover span::before {
+    width: 100%;
+}

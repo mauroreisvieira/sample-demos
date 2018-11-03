@@ -1,0 +1,21 @@
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: inherit;
+
+  &__item {
+    position: relative;
+    margin-bottom: $baseline / 4;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $colorGrayDark;
+    font-weight: $fontSemiBold;
+    transition: color .2s $animationEasing;
+
+    &:hover {
+      color: $colorViolet;
+    }
+  }
+}

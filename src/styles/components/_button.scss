@@ -1,0 +1,28 @@
+.btn {
+  display: inline-flex;
+  padding: $baseline;
+  text-transform: uppercase;
+  color: $colorViolet;
+  font-size: $fontXSmall;
+  font-weight: $fontSemiBold;
+  border: 2px solid currentColor;
+  cursor: pointer;
+
+
+  &:focus,
+  &:hover {
+    background-color: $colorViolet;
+    border: 2px solid $colorViolet;
+    color: white;
+    outline: none;
+  }
+
+  &[disabled],
+  &[disabled]:hover {
+    background: inherit;
+    border: 2px solid;
+    color: inherit;
+    cursor: default;
+    opacity: .2;
+  }
+}

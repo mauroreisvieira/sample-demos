@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  background-color: #fff;
+
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: $baseline / 2 auto;
+
+    @include small() {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    color: $colorViolet;
+    text-transform: uppercase;
+    font-size: $fontMedium;
+    font-weight: $fontSemiBold;
+    cursor: default;
+
+
+    @include small() {
+      display: flex;
+      flex-direction: column;
+      font-size: $fontLarge;
+      margin: $baseline 0;
+    }
+
+    > img {
+      width: 22px;
+      margin-right: $baseline;
+
+      @include small() {
+        display: flex;
+        width: 28px;
+        margin-right: 0;
+        margin-bottom: $baseline;
+      }
+    }
+  }
+}

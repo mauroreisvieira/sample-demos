@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Custom Element</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="msapplication-TileColor" content="#9266CC">
+    <meta name="theme-color" content="#9266CC">
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/logo.ico">
+    <link rel="icon" href="../../assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../../assets/prism/prism.css">
+    <link rel="stylesheet" href="../../assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../../assets/images/logo.png" alt="Sample Demos">
+                Sample Demos
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="./../../index.html"">Home</a></li>
+                    <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <h1>Custom Element</h1>
+        </div>
+    </div>
+    <main class="container">
+        <section>
+            <h2>Custom Elements</h2>
+            <p>Custom elements provide a way for authors to build their own fully-featured DOM elements. Although authors could always use non-standard elements in their documents, with application-specific behaviour added after the fact by scripting or similar, such elements have historically been non-conforming and not very functional. By defining a custom element, authors can inform the parser how to properly construct an element and how elements of that class should react to changes.</p>
+
+            <div class="demo-code">
+<pre class="hljs">
+    <code class="language-js">
+class MyElement extends HTMLElement {
+    static get observedAttributes() {
+        return ['color', 'fontSize'];
+    }
+
+    constructor() {
+        super();
+        this.root = this.attachShadow({mode: 'open'});
+        this.message = document.createElement('div');
+        this.message.textContent = 'My First Custom Component';
+        this.root.appendChild(this.message);
+
+        this.connectCallback();
+
+        this.color = this.root.host.getAttribute('color');
+        this.fontSize = this.root.host.getAttribute('fontSize');
+
+        this.addEventListener();
+    }
+
+    /** Custom myElemet element added to page. */
+    connectCallback() {
+        this.updateStyle();
+    }
+
+    /** Custom myElemet element removed from page. */
+    disconnectedCallback() {}
+
+    /** Custom myElemet element moved to new page. */
+    adoptedCallback() {}
+
+    /** Custom myElemet element attributes changed */
+    attributeChangedCallback(name, oldValue, newValue) {
+        this.updateStyle();
+    }
+
+    updateStyle() {
+        this.color = this.root.host.getAttribute('color');
+        this.fontSize = this.root.host.getAttribute('fontSize');
+
+        this.root.host.style.setProperty('color', this.color);
+        this.root.host.style.setProperty('font-size', this.fontSize + 'px');
+    }
+
+    addEventListener() {
+        this.root.addEventListener('click', () => {
+            const evt = new CustomEvent('wow', {
+                detail: {
+                    m: '%cMy First Custom Element!',
+                    s: `color: ${this.color}; font-size: ${this.fontSize}px;`
+                },
+                bubbles: true
+            });
+            this.dispatchEvent(evt);
+        });
+    }
+}
+    </code>
+</pre>
+            </div>
+        </section>
+        <section>
+            <h2>Demo</h2>
+            <div class="options">
+                <button class="add">Add MyElement in DOM</button>
+                <button class="update">Update attributes</button>
+                <button class="remove">Remove MyElement from DOM</button>
+            </div>
+            <div id="demo"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
+    </footer>
+    <script type="text/javascript" src="../../assets/prism/prism.js"></script>
+    <script src="my-element.js"></script>
+    <script type="text/javascript">
+        const add = document.querySelector('.add');
+        const update = document.querySelector('.update');
+        const remove = document.querySelector('.remove');
+        const demo = document.querySelector('#demo');
+        let myElemet;
+
+        update.disabled = true;
+        remove.disabled = true;
+
+        add.addEventListener('click', (evt) => {
+            myElemet = document.createElement('my-element');
+            myElemet.setAttribute('color', 'red');
+            myElemet.setAttribute('fontSize', '20');
+            add.disabled = !add.disabled;
+            update.disabled = !add.disabled;
+            remove.disabled = !remove.disabled;
+            demo.appendChild(myElemet);
+        });
+
+        update.addEventListener('click', (evt) => {
+            myElemet.setAttribute('color', `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`);
+            myElemet.setAttribute('fontSize', `${random(18, 36)}`);
+        });
+
+        remove.addEventListener('click', (evt) => {
+            demo.removeChild(myElemet);
+            add.disabled = !add.disabled;
+            update.disabled = !add.disabled;
+            remove.disabled = !remove.disabled;
+        });
+
+        document.addEventListener('wow', (evt) => {
+            console.log(evt.detail.m, evt.detail.s);
+        });
+
+        random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+    </script>
+</body>
+</html>

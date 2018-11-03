@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Generators, yield e iterators</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="msapplication-TileColor" content="#9266CC">
+    <meta name="theme-color" content="#9266CC">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/logo.ico">
+    <link rel="icon" href="../assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../assets/prism/prism.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="Sample Demos">
+                Sample Demos
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <h1>Generators, yield e iterators</h1>
+        </div>
+    </div>
+    <main class="container">
+        <section>
+            <h2>Iterators</h2>
+            <p>In JavaScript an iterator is an object which defines a sequence and potentially a return value upon its termination.</p>
+            <p> More specifically an iterator is any object which implements the Iterator protocol by having a <code>next()</code> method which returns an object with two properties:</p>
+            <ul>
+                <li><code>value</code> the next value in the sequence;</li>
+                <li><code>done</code> which is true if the last value in the sequence has already been consumed</li>
+            </ul>
+            <div class="demo-code">
+<pre class="hljs">
+    <code class="language-js">
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let it = arr[Symbol.iterator]();
+        console.log(it.next().value); // 1
+        console.log(it.next().value); // 2
+        console.log(it.next().value); // 3
+        console.log(it.next().value); // 4
+
+        function* subTopics() {
+            yield "B1";
+            yield "B2";
+            yield "B3";
+        }
+
+        function* topics() {
+            yield "A";
+            yield "B";
+            yield* subTopics();
+            yield "C";
+        }
+
+        var iterator = topics();
+
+        console.log(iterator.next()); // { value: "A", done: false }
+        console.log(iterator.next()); // { value: "B", done: false }
+        console.log(iterator.next()); // { value: "B1", done: false }
+        console.log(iterator.next()); // { value: "B2", done: false }
+        console.log(iterator.next()); // { value: "B3", done: false }
+        console.log(iterator.next()); // { value: "C", done: false }
+        console.log(iterator.next()); // { value: undefined, done: true }
+
+        function* topics() {
+            yield* [1, 2, 3];
+        }
+
+        var iterator = topics();
+        console.log(iterator.next()); // { value: 1, done: false }
+        console.log(iterator.next()); // { value: 2, done: false }
+        console.log(iterator.next()); // { value: 3, done: false }
+        console.log(iterator.next()); // { value: undefined, done: true }
+    </code>
+</pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
+    </footer>
+</body>
+
+<script type="text/javascript" src="../assets/prism/prism.js"></script>
+<script type="text/javascript">
+    let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    let it = arr[Symbol.iterator]();
+    console.log(it.next().value); // 1
+    console.log(it.next().value); // 2
+    console.log(it.next().value); // 3
+    console.log(it.next().value); // 4
+
+    function* subTopics() {
+        yield "B1";
+        yield "B2";
+        yield "B3";
+    }
+
+    function* topics() {
+        yield "A";
+        yield "B";
+        yield* subTopics();
+        yield "C";
+    }
+
+    var iterator = topics();
+
+    console.log(iterator.next()); // { value: "A", done: false }
+    console.log(iterator.next()); // { value: "B", done: false }
+    console.log(iterator.next()); // { value: "B1", done: false }
+    console.log(iterator.next()); // { value: "B2", done: false }
+    console.log(iterator.next()); // { value: "B3", done: false }
+    console.log(iterator.next()); // { value: "C", done: false }
+    console.log(iterator.next()); // { value: undefined, done: true }
+
+    function* topics() {
+        yield* [1, 2, 3];
+    }
+
+    var iterator = topics();
+    console.log(iterator.next()); // { value: 1, done: false }
+    console.log(iterator.next()); // { value: 2, done: false }
+    console.log(iterator.next()); // { value: 3, done: false }
+    console.log(iterator.next()); // { value: undefined, done: true }
+</script>
+</html>

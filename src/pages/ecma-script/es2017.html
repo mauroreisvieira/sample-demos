@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ECMAScript 2017</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="msapplication-TileColor" content="#9266CC">
+    <meta name="theme-color" content="#9266CC">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/logo.ico">
+    <link rel="icon" href="../assets/images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../assets/prism/prism.css">
+    <link rel="stylesheet" href="../assets/styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="../assets/images/logo.png" alt="Sample Demos">
+                Sample Demos
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="https://twitter.com/mauroreisvieira" target="_blank">Twitter</a></li>
+                    <li><a href="https://github.com/maurovieirareis/sample-demos" target="_blank">View in GitHub</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="container">
+            <h1>ECMAScript 2017</h1>
+        </div>
+    </div>
+    <main class="container">
+        <section>
+            <h2>Array Includes</h2>
+            <p>The <code>includes()</code> function on every array check if an array contains a specified value.</p>
+            <p>Return: <strong> boolean</strong></p>
+            <div class="demo-code">
+<pre class="hljs">
+    <code class="language-js">
+        const cities = [ 'Lisbon', 'Porto', 'Roma', 'Paris'];
+        console.log(cities.includes("Porto")) // true
+        console.log(cities.includes("New York")) // false
+    </code>
+</pre>
+            </div>
+        </section>
+        <section>
+            <h2>Async functions</h2>
+            <p>The notification of a settlement happens asynchronously. In other words: the callbacks of then() and catch() are always executed after the current code is finished.</p>
+            <div class="demo-code">
+<pre class="hljs">
+    <code class="language-js">
+        async function asyncFunc() {
+            console.log('asyncFunc()');
+            return '123';
+        }
+        asyncFunc().
+        then(x => console.log(`Resolved: ${x}`));
+        console.log('main');
+    </code>
+</pre>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
+    </footer>
+</body>
+
+<script type="text/javascript" src="../assets/prism/prism.js"></script>
+</html>
