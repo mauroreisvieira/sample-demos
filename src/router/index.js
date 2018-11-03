@@ -32,52 +32,52 @@ export default new Router({
         // Javascript
         {
             path: '/javascript/relative-time-format',
-            name: 'relative-time-format',
+            name: 'Relative Time Format',
             component: pages
         },
         {
             path: '/javascript/break-out-of-nested-loops',
-            name: 'break-out-of-nested-loops',
+            name: 'Break out of nested loops',
             component: pages
         },
         {
             path: '/javascript/destructing-objects-and-arrays',
-            name: 'destructing-objects-and-arrays',
+            name: 'Destructing objects & arrays',
             component: pages
         },
         {
             path: '/javascript/read-only-properties',
-            name: 'read-only-properties',
+            name: 'Object read only properties',
             component: pages
         },
         {
             path: '/javascript/generators-yield-and-iterators',
-            name: 'generators-yield-and-iterators',
+            name: 'Generators Yield & Iterators',
             component: pages
         },
         {
             path: '/javascript/getters-setters',
-            name: 'getters-setters',
+            name: 'Classes: Getters & Setters',
             component: pages
         },
         {
             path: '/javascript/array-filter',
-            name: 'array-filter',
+            name: 'Javascript Array filter()',
             component: pages
         },
         {
             path: '/javascript/array-flatmap',
-            name: 'array-flatmap',
+            name: 'Javascript Array flatmap()',
             component: pages
         },
         {
             path: '/javascript/array-reduce',
-            name: 'array-reduce',
+            name: 'Javascript Array reduce()',
             component: pages
         },
         {
             path: '/javascript/array-sort',
-            name: 'array-sort',
+            name: 'Javascript Array sort()',
             component: pages
         },
         // ECMA Script
