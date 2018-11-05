@@ -1,0 +1,25 @@
+{
+    "folders":
+    [
+        {
+            "file_exclude_patterns": [
+                "*.sublime*",
+                "*.log",
+            ],
+            "binary_file_patterns": [
+                "*.css",
+                "*.js"
+            ],
+            "folder_exclude_patterns": [
+                "node_modules",
+                ".vscode"
+            ],
+            "path": "."
+        }
+    ],
+    "settings": {
+        "SublimeLinter.linters.tslint.excludes": [
+            "**/node_modules/**"
+        ]
+    }
+}

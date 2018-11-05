@@ -1,0 +1,1887 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"u",
+				"undefined\tvar"
+			],
+			[
+				"c",
+				"currentStep\tproperty"
+			],
+			[
+				"inn",
+				"innerText\tproperty"
+			],
+			[
+				"CSS",
+				"CSS_STATES\tproperty"
+			],
+			[
+				"Proc",
+				"ProcessingSteps\tclass"
+			],
+			[
+				"con",
+				"contains\tmethod"
+			],
+			[
+				"HTM",
+				"HTMLElement\tvar"
+			],
+			[
+				"chil",
+				"childNodes\tproperty"
+			],
+			[
+				"Pl",
+				"PluginToggle\tclass"
+			],
+			[
+				"Node",
+				"NodeList\tvar"
+			],
+			[
+				"pa",
+				"parentNode\tproperty"
+			],
+			[
+				"ncpp-",
+				"ncpp-text-bold\t(Colors.vue)"
+			],
+			[
+				"ncpp-text-",
+				"ncpp-text-xxhuge\t(Colors.vue)"
+			],
+			[
+				"ncpp-c",
+				"ncpp-col-12\t(Heading.vue)"
+			],
+			[
+				"Gene",
+				"GenericTooltip\tclass"
+			],
+			[
+				"in",
+				"innerWidth\tproperty"
+			],
+			[
+				"w",
+				"window\tvar"
+			],
+			[
+				"Ge",
+				"GenericTooltip\tclass"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"scro",
+				"scrollTop\tproperty"
+			],
+			[
+				"ht",
+				"HTMLElement\tvar"
+			],
+			[
+				"Prod",
+				"ProductItemModule\tclass"
+			],
+			[
+				"Edit",
+				"EditMenuFoundation\talias"
+			],
+			[
+				"HT",
+				"HTMLElement\tvar"
+			],
+			[
+				"Ed",
+				"EditMenuFoundation\tclass"
+			],
+			[
+				"Com",
+				"Component\tclass"
+			],
+			[
+				"ncpp-list",
+				"ncpp-list__item\t(Fonts.vue)"
+			],
+			[
+				"trs",
+				"trf-sc\ttransform: scale(${1:x}, ${2:y});"
+			],
+			[
+				"eve",
+				"eventDelete\tconst"
+			],
+			[
+				"fun",
+				"Function\tconst"
+			],
+			[
+				"op",
+				"options\tconst"
+			],
+			[
+				"s",
+				"stopPropagation\tmethod"
+			],
+			[
+				"tr",
+				"trf\ttransform"
+			],
+			[
+				"typ",
+				"typeof\tkeyword"
+			],
+			[
+				"Pay",
+				"PaymentOption\tclass"
+			],
+			[
+				"Ht",
+				"HTMLElement\tvar"
+			],
+			[
+				"t",
+				"title\tAttr"
+			],
+			[
+				"backgr",
+				"background-color\tproperty"
+			],
+			[
+				"st",
+				"stats/"
+			],
+			[
+				"un",
+				"undefined\tvoid"
+			],
+			[
+				"p",
+				"push\t(...items: empty[]) => number"
+			],
+			[
+				"file",
+				"fileContent\tany"
+			],
+			[
+				"da",
+				"datepicker/"
+			],
+			[
+				"sc",
+				"scrollTop\tproperty"
+			],
+			[
+				"parse",
+				"parseInt\tfunction"
+			],
+			[
+				"text",
+				"textarea\tTag"
+			],
+			[
+				"root",
+				"rootWrapper\tgetter"
+			],
+			[
+				"help",
+				"helpers\t(chat-bubble.json)"
+			],
+			[
+				"Cha",
+				"ChatPage\tclass"
+			],
+			[
+				"Muta",
+				"MutationRecord\tinterface"
+			],
+			[
+				"th",
+				"this\tkeyword"
+			],
+			[
+				"C",
+				"CSS_CLASSES\tproperty"
+			],
+			[
+				"class",
+				"classList\tproperty"
+			],
+			[
+				"close",
+				"closeAll\tproperty"
+			],
+			[
+				"cl",
+				"clientWidth\tproperty"
+			],
+			[
+				"que",
+				"querySelector\tmethod"
+			],
+			[
+				"cla",
+				"classList\tproperty"
+			],
+			[
+				"cli",
+				"clientHeight\tproperty"
+			],
+			[
+				"qu",
+				"querySelector\tmethod"
+			],
+			[
+				"sup",
+				"support\tconst"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ba",
+				"background\t(data.json)"
+			],
+			[
+				"Na",
+				"Nithya"
+			],
+			[
+				"max",
+				"maxHeight"
+			],
+			[
+				"a",
+				"absolute\t(style-docs.scss)"
+			],
+			[
+				"age",
+				"agentJoined\t(chat-page.hbs)"
+			],
+			[
+				"ex",
+				"expandedChat\t(expanded-chat.hbs)"
+			],
+			[
+				"Exp",
+				"Expanded\t(expanded-chat.hbs)"
+			],
+			[
+				"c-agent-joined__",
+				"c-agent-joined__info\t(agent-joined.hbs)"
+			],
+			[
+				"bordr",
+				"border-radius"
+			],
+			[
+				"on",
+				"onSave"
+			],
+			[
+				"o",
+				"offsetHeight"
+			],
+			[
+				"c-is",
+				"c-is-visible\t(index.ts)"
+			],
+			[
+				"el",
+				"elem"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"i",
+				"items\tproperty"
+			],
+			[
+				"ro",
+				"rootElement\tgetter"
+			],
+			[
+				"jane",
+				"janedoe@provider.com"
+			],
+			[
+				"y",
+				"you"
+			],
+			[
+				"c-te",
+				"c-text-sm"
+			],
+			[
+				"clas",
+				"class"
+			],
+			[
+				"acc",
+				"account"
+			],
+			[
+				"you",
+				"your"
+			],
+			[
+				"base",
+				"baseline\t(_base.scss)"
+			],
+			[
+				"setT",
+				"setTimeout\t( handler: any, timeout?: long, arguments_..: any ): long Window"
+			],
+			[
+				"unde",
+				"underline"
+			],
+			[
+				"rem",
+				"removeEventListener\tmethod"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"CHA",
+				"CHAR_WINDOW_HIDDEN"
+			],
+			[
+				"Docu",
+				"Documentation"
+			],
+			[
+				"I",
+				"ITEM"
+			],
+			[
+				"W",
+				"WRAPPER"
+			],
+			[
+				"sh",
+				"showMore\tproperty"
+			],
+			[
+				"hi",
+				"hideMoreText\tmethod"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"roo",
+				"rootElement\tgetter"
+			],
+			[
+				"chatB",
+				"chatBodyContent"
+			],
+			[
+				"wid",
+				"width\t = 'initial' Style CSS"
+			],
+			[
+				"cont",
+				"contentText"
+			],
+			[
+				"visi",
+				"visible"
+			],
+			[
+				"padd",
+				"paddingBottom\tproperty"
+			],
+			[
+				"g",
+				"getComputedStyle\tmethod"
+			],
+			[
+				"sho",
+				"showMore"
+			],
+			[
+				"isS",
+				"isCSR"
+			],
+			[
+				"console",
+				"console_log"
+			],
+			[
+				"cr",
+				"csr\tproperty"
+			],
+			[
+				"ma",
+				"mah\tmax-height"
+			],
+			[
+				"getE",
+				"getElementById\tmethod"
+			],
+			[
+				"get",
+				"getElementsByClassName\tmethod"
+			],
+			[
+				"co",
+				"contentText\tproperty"
+			],
+			[
+				"H",
+				"HTMLElement\tinterface"
+			],
+			[
+				"h",
+				"html\tmethod"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"Chat",
+				"chatBubble"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "samples.sublime-project",
+			"settings":
+			{
+				"buffer_size": 518,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 99.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"da",
+				"DA UI: Select Accent"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sys:ma",
+				"Set Syntax: Markdown"
+			],
+			[
+				"Co",
+				"Console Wrap: Remove Commented logs"
+			],
+			[
+				"Consoe",
+				"Console Wrap: Show all logs"
+			],
+			[
+				"sh",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"sc",
+				"UI: Select Color Scheme"
+			],
+			[
+				"sch",
+				"UI: Select Color Scheme"
+			],
+			[
+				"sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"acc",
+				"DA UI: Select Accent"
+			],
+			[
+				"sys:ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"dox",
+				"DoxyDoxygen: Translate Selection"
+			],
+			[
+				"Do",
+				"DoxyDoxygen: Update Comment With Preferred Style"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"DA",
+				"DA UI: Select Accent"
+			],
+			[
+				"u",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sys:scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"Show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"Da",
+				"DA UI: Select Skin"
+			],
+			[
+				"theme",
+				"UI: Select Theme"
+			],
+			[
+				"Scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Mate",
+				"Material Theme: Activate theme"
+			],
+			[
+				"mate",
+				"Material Theme: Configuration"
+			],
+			[
+				"ma",
+				"Material Theme: Advanced configuration"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"mo",
+				"Monokai Pro: select theme"
+			],
+			[
+				"mon",
+				"Monokai Pro: select theme"
+			],
+			[
+				"linter",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"P",
+				"Package Control: Disable Package"
+			],
+			[
+				"scheme",
+				"UI: Select Color Scheme"
+			],
+			[
+				"Pack",
+				"Package Control: Disable Package"
+			],
+			[
+				"Thee",
+				"UI: Select Theme"
+			],
+			[
+				"Mat",
+				"Material Theme: Activate theme"
+			],
+			[
+				"Settings",
+				"Preferences: Settings"
+			],
+			[
+				"sett",
+				"Preferences: Settings – Syntax Specific"
+			],
+			[
+				"sy:js",
+				"Set Syntax: JSON"
+			],
+			[
+				"Term",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"git s",
+				"GitSavvy: help"
+			],
+			[
+				"sho",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"git",
+				"git: status"
+			],
+			[
+				"upp",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Mo",
+				"Monokai Pro: select theme"
+			],
+			[
+				"Tehe",
+				"UI: Select Theme"
+			],
+			[
+				"Sche",
+				"UI: Select Color Scheme"
+			],
+			[
+				"MO",
+				"Monokai Pro: select theme"
+			],
+			[
+				"The",
+				"UI: Select Theme"
+			],
+			[
+				"Mon",
+				"Monokai Pro: select theme"
+			],
+			[
+				"lin",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"Console",
+				"Console Wrap: Create logs"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"sys:ty",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"upd",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sys:typ",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"sy:htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"Sy: Vue",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"sy:V",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"UI",
+				"UI: Select Theme"
+			],
+			[
+				"htm",
+				"HTMLPrettify"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"sys:jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"color",
+				"GutterColor: Fix Current Color Scheme"
+			],
+			[
+				"sys:htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"ssy:htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"sys:html",
+				"Set Syntax: HTML"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"cons",
+				"Console Wrap: Show all logs"
+			],
+			[
+				"subl",
+				"SublimeLinter: Toggle Highlights"
+			],
+			[
+				"In",
+				"Package Control: Install Package"
+			],
+			[
+				"carbon",
+				"Carbon: share selection"
+			],
+			[
+				"car",
+				"Carbon: share selection"
+			],
+			[
+				"UPD",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"curo",
+				"CursorRuler: Wrap Lines"
+			],
+			[
+				"syn:js",
+				"Set Syntax: JSON"
+			],
+			[
+				"Vue",
+				"VUEFormatter: Set Plugin Options"
+			],
+			[
+				"sys:ts",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"s",
+				"Set Syntax: SCSS"
+			],
+			[
+				":w",
+				":w - Save"
+			],
+			[
+				"enabl",
+				"Package Control: Enable Package"
+			],
+			[
+				"enable",
+				"Package Control: Enable Package"
+			],
+			[
+				"Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"en",
+				"Package Control: Enable Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"pack",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"Ui:",
+				"UI: Select Color Scheme"
+			],
+			[
+				"schem",
+				"UI: Select Color Scheme"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"ay",
+				"ayu: Activate theme"
+			],
+			[
+				"sy",
+				"Set Syntax: SCSS"
+			],
+			[
+				"synt: scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"synt",
+				"Set Syntax: SCSS"
+			],
+			[
+				"sys",
+				"Set Syntax: SCSS"
+			],
+			[
+				"sysn:scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"sys:",
+				"Set Syntax: SCSS"
+			],
+			[
+				"disabe",
+				"Package Control: Disable Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"da u",
+				"DA UI: Select Accent"
+			],
+			[
+				"mat",
+				"Material Theme: Activate theme"
+			],
+			[
+				"git st",
+				"git: status"
+			],
+			[
+				"syn:h",
+				"Set Syntax: HTML"
+			],
+			[
+				"them",
+				"UI: Select Theme"
+			],
+			[
+				"syn:htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"ayu",
+				"ayu: Activate theme"
+			],
+			[
+				"in:",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"sys:h",
+				"Set Syntax: HTML"
+			],
+			[
+				"sys: vu",
+				"Set Syntax: Vue Component"
+			],
+			[
+				"con",
+				"Convert Case: Title Case"
+			],
+			[
+				"mar",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"han",
+				"Set Syntax: Handlebars"
+			],
+			[
+				"sys:type",
+				"Set Syntax: TypeScript"
+			],
+			[
+				"sys:ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn:ba",
+				"Set Syntax: JavaScript (Babel)"
+			],
+			[
+				"settinf",
+				"Preferences: Settings – Syntax Specific"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 202.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/mauroreisvieira/Documents/Github/sample-demos"
+	],
+	"file_history":
+	[
+		"/Users/mauroreisvieira/Documents/Github/sample-demos/sample-demo.sublime-project",
+		"/Users/mauroreisvieira/Documents/Namecheap/UX-Team/shift/shift.sublime-project"
+	],
+	"find":
+	{
+		"height": 64.0
+	},
+	"find_in_files":
+	{
+		"height": 207.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "samples.sublime-project",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 518,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								390,
+								390
+							]
+						],
+						"settings":
+						{
+							"SL.289.region_keys":
+							[
+							],
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.clone": -1,
+							"bracket_highlighter.clone_locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										634,
+										635
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										0,
+										1
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.clone_regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										389,
+										390
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"region.purplish"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										31,
+										32
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"git_gutter_is_enabled": true,
+							"git_savvy.repo_path": "/Users/mauroreisvieira/Documents/Github/sample-demos",
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 46.0
+	},
+	"input":
+	{
+		"height": 71.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 224.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 160.0
+	},
+	"output.doc":
+	{
+		"height": 244.0
+	},
+	"output.exec":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mdpopups":
+	{
+		"height": 0.0
+	},
+	"output.sublime_linter_panel":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "samples.sublime-project",
+	"replace":
+	{
+		"height": 88.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"gener-too/s",
+				"shift/packages/generic-tooltip/_variables.scss"
+			],
+			[
+				"-sign-in-to-sign-up/03-pages-full-page-form-full-page-sign-in-to-sign-up.rendered.html",
+				"public/patterns/03-pages-full-page-form-full-page-sign-in-to-sign-up/03-pages-full-page-form-full-page-sign-in-to-sign-up.rendered.html"
+			],
+			[
+				"-forms-form-extendedAttributes-info-demo/02-layouts-forms-form-extendedAttributes-info-demo.rendered.html",
+				"public/patterns/02-layouts-forms-form-extendedAttributes-info-demo/02-layouts-forms-form-extendedAttributes-info-demo.rendered.html"
+			],
+			[
+				"-extendedAttributes-info-demo/02-layouts-forms-form-extendedAttributes-info-demo.rendered.html",
+				"public/patterns/02-layouts-forms-form-extendedAttributes-info-demo/02-layouts-forms-form-extendedAttributes-info-demo.rendered.html"
+			],
+			[
+				"/03-pages-order-review-order-processing/03-pages-order-review-order-processing.rendered.htm",
+				"public/patterns/03-pages-order-review-order-processing/03-pages-order-review-order-processing.rendered.html"
+			],
+			[
+				"pa",
+				"package.json"
+			],
+			[
+				"ges/shift/inde",
+				"shift/packages/shift/index.ts"
+			],
+			[
+				"/hint/index.ts",
+				"shift/packages/hint/index.ts"
+			],
+			[
+				"ges/search-box/index.ts",
+				"shift/packages/search-box/index.ts"
+			],
+			[
+				"pac",
+				"package.json"
+			],
+			[
+				"bal/ts/core/utilitie",
+				"shift/packages/global/ts/core/utilities.ts"
+			],
+			[
+				"global/grid/_index.scss",
+				"shift/packages/global/grid/_index.scss"
+			],
+			[
+				"p",
+				"package.json"
+			],
+			[
+				"ckages/shopping-cart-page/index.ts",
+				"shift/packages/shopping-cart-page/index.ts"
+			],
+			[
+				"t/packages/shoppin",
+				"shift/packages/shopping-cart-header/index.ts"
+			],
+			[
+				"edit-menu/",
+				"shift/packages/edit-menu/adapter.ts"
+			],
+			[
+				"public/patterns/03-pages-order-review-order-review/03-pages-order-review-order-review.rendered.html",
+				"public/patterns/03-pages-order-review-order-review/03-pages-order-review-order-review.rendered.html"
+			],
+			[
+				"moda/inde.t",
+				"shift/packages/modal/index.ts"
+			],
+			[
+				"moda/inde.ts",
+				"shift/packages/modal/index.ts"
+			],
+			[
+				"moda/i.ts",
+				"shift/packages/modal/index.ts"
+			],
+			[
+				"ui.t",
+				"shift/packages/global/ts/core/ui.ts"
+			],
+			[
+				"/ts/core/u",
+				"shift/packages/global/ts/core/ui.ts"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"webpa",
+				"webpack.config.js"
+			],
+			[
+				"ui.ts",
+				"shift/packages/global/ts/core/ui.ts"
+			],
+			[
+				"obal/ts/core/ui",
+				"shift/packages/global/ts/core/ui.ts"
+			],
+			[
+				"credit-card-invoice/_base.scss",
+				"shift/packages/credit-card-invoice/_base.scss"
+			],
+			[
+				"lobal/style.jso",
+				"stats/global/style.json"
+			],
+			[
+				"mponents/Message.vue",
+				"stats/components/Message.vue"
+			],
+			[
+				"atterns/01-modules-shopping-cart-header-shopping-cart-header-demo/01-modules-shopping-cart-header-sho",
+				"public/patterns/01-modules-shopping-cart-header-shopping-cart-header-demo/01-modules-shopping-cart-header-shopping-cart-header-demo.rendered.html"
+			],
+			[
+				"gene",
+				"source/_patterns/00-documentation/01-components/generic-tooltip.hbs"
+			],
+			[
+				"2-layouts-forms-form-address-demo/02-layouts-forms-form-address-demo.rendered.html",
+				"public/patterns/02-layouts-forms-form-address-demo/02-layouts-forms-form-address-demo.rendered.html"
+			],
+			[
+				"ayouts-forms-form-address-demo/02-layouts-forms-form-address-demo.rendered.html",
+				"public/patterns/02-layouts-forms-form-address-demo/02-layouts-forms-form-address-demo.rendered.html"
+			],
+			[
+				"-form-address-demo/02-layouts-forms-form-address-demo.rendered.html",
+				"public/patterns/02-layouts-forms-form-address-demo/02-layouts-forms-form-address-demo.rendered.html"
+			],
+			[
+				"public/patterns/01-modules-donations-donations-demo/01-modules-donations-donations-demo.rendered.html",
+				"public/patterns/01-modules-donations-donations-demo/01-modules-donations-donations-demo.rendered.html"
+			],
+			[
+				"al-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html",
+				"public/patterns/01-modules-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html"
+			],
+			[
+				"les-financial-panel-financial-panel-demo.rendered.html",
+				"public/patterns/01-modules-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html"
+			],
+			[
+				"ddres/03-pages-full-page-form-full-page-addres.rendered.html",
+				"public/patterns/03-pages-full-page-form-full-page-addres/03-pages-full-page-form-full-page-addres.rendered.html"
+			],
+			[
+				"-pages-full-page-form-full-page-addres.rendered.html",
+				"public/patterns/03-pages-full-page-form-full-page-addres/03-pages-full-page-form-full-page-addres.rendered.html"
+			],
+			[
+				"/01-modules-financial-panel-financial-panel-demo.rendered.html",
+				"public/patterns/01-modules-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html"
+			],
+			[
+				"modules-financial-panel-financial-panel-demo.rendered.html",
+				"public/patterns/01-modules-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html"
+			],
+			[
+				"lic/patterns/03-pages-full-page-form-full-page-addres/03-pages-full-page-form-full-page-addres.rendered.html",
+				"public/patterns/03-pages-full-page-form-full-page-addres/03-pages-full-page-form-full-page-addres.rendered.html"
+			],
+			[
+				"anel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html",
+				"public/patterns/01-modules-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html"
+			],
+			[
+				"demo/01-modules-financial-panel-financial-panel-demo.rendered.html",
+				"public/patterns/01-modules-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html"
+			],
+			[
+				"emo/01-modules-financial-panel-financial-panel-demo.rendered.html",
+				"public/patterns/01-modules-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html"
+			],
+			[
+				"les-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html",
+				"public/patterns/01-modules-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html"
+			],
+			[
+				"3-pages-order-review-order-review-simple/03-pages-order-review-order-review-simple.rendered.html",
+				"public/patterns/03-pages-order-review-order-review-simple/03-pages-order-review-order-review-simple.rendered.html"
+			],
+			[
+				"3-pages-system-messages-shopping-cart-system-messages/03-pages-system-messages-shopping-cart-system-messages.rendered.ht",
+				"public/patterns/03-pages-system-messages-shopping-cart-system-messages/03-pages-system-messages-shopping-cart-system-messages.rendered.html"
+			],
+			[
+				"1-modules-product-item-module-product-item-module-demo/01-modules-product-item-module-product-item-module-demo.rendered.html",
+				"public/patterns/01-modules-product-item-module-product-item-module-demo/01-modules-product-item-module-product-item-module-demo.rendered.html"
+			],
+			[
+				"-sign-in-to-sign-up.hbs",
+				"source/_patterns/03-pages/full-page-form/full-page-sign-in-to-sign-up.hbs"
+			],
+			[
+				"inancial-panel-financial-panel-demo.rendered.html",
+				"public/patterns/01-modules-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html"
+			],
+			[
+				"public/patterns/03-pages-order-review-order-review-empty/03-pages-order-review-order-review-empty.rendered.htm",
+				"public/patterns/03-pages-order-review-order-review-empty/03-pages-order-review-order-review-empty.rendered.html"
+			],
+			[
+				"financial-panel-demo.hbs",
+				"source/_patterns/01-modules/financial-panel/financial-panel-demo.hbs"
+			],
+			[
+				"blic/patterns/11-svg-_mastercard-inactive/11-svg-_mastercard-inactive.rendered",
+				"public/patterns/11-svg-_mastercard-inactive/11-svg-_mastercard-inactive.rendered.html"
+			],
+			[
+				"financial-panel-financial-panel-demo.rendered.html",
+				"public/patterns/01-modules-financial-panel-financial-panel-demo/01-modules-financial-panel-financial-panel-demo.rendered.html"
+			],
+			[
+				"p-form-sign-in-to-recover-password.hbs",
+				"source/_patterns/03-pages/full-page-form/pop-up-form-sign-in-to-recover-password.hbs"
+			],
+			[
+				"ia-demo/02-layouts-forms-extended-attributes-form-asia-demo.rendered.html",
+				"public/patterns/02-layouts-forms-extended-attributes-form-asia-demo/02-layouts-forms-extended-attributes-form-asia-demo.rendered.html"
+			],
+			[
+				"m-sign-in-to-recover-password.hbs",
+				"source/_patterns/03-pages/full-page-form/full-page-sign-in-to-recover-password.hbs"
+			],
+			[
+				"-demo/02-layouts-forms-form-credit-card-demo.rendered.html",
+				"public/patterns/02-layouts-forms-form-credit-card-demo/02-layouts-forms-form-credit-card-demo.rendered.html"
+			],
+			[
+				"0-documentation-01-components-widget-card-list/00-documentation-01-components-widget-card-list.rendered.html",
+				"public/patterns/00-documentation-01-components-widget-card-list/00-documentation-01-components-widget-card-list.rendered.html"
+			],
+			[
+				"ponents-widget-card-list/00-documentation-01-components-widget-card-list.rendered.html",
+				"public/patterns/00-documentation-01-components-widget-card-list/00-documentation-01-components-widget-card-list.rendered.html"
+			],
+			[
+				"pop-up-form-sign-up.",
+				"source/_patterns/03-pages/full-page-form/pop-up-form-sign-up.hbs"
+			],
+			[
+				"1-modules-product-feature-product-feature-demo/01-modules-product-feature-product-feature-demo.rendered.html",
+				"public/patterns/01-modules-product-feature-product-feature-demo/01-modules-product-feature-product-feature-demo.rendered.html"
+			],
+			[
+				"s-widget-card-list/00-documentation-01-components-widget-card-list.rendered.html",
+				"public/patterns/00-documentation-01-components-widget-card-list/00-documentation-01-components-widget-card-list.rendered.html"
+			],
+			[
+				"pop-up-form-final-step.hbs",
+				"source/_patterns/03-pages/full-page-form/pop-up-form-final-step.hbs"
+			],
+			[
+				"full-page-form-pop-up-form-final-step/03-pages-full-page-form-pop-up-form-final-step.rendered.html",
+				"public/patterns/03-pages-full-page-form-pop-up-form-final-step/03-pages-full-page-form-pop-up-form-final-step.rendered.html"
+			],
+			[
+				"ation-01-components-cart-widget.rendered.html",
+				"public/patterns/00-documentation-01-components-cart-widget/00-documentation-01-components-cart-widget.rendered.html"
+			],
+			[
+				"c/patterns/11-svg-_visa-inactive/11-svg-_visa-inactive.rendered.html",
+				"public/patterns/11-svg-_visa-inactive/11-svg-_visa-inactive.rendered.html"
+			],
+			[
+				"page-heading/01-modules-page-heading-_page-heading.rendered.html",
+				"public/patterns/01-modules-page-heading-_page-heading/01-modules-page-heading-_page-heading.rendered.html"
+			],
+			[
+				"tation-01-components-icons/00-documentation-01-components-icons.rendered.html",
+				"public/patterns/00-documentation-01-components-icons/00-documentation-01-components-icons.rendered.html"
+			],
+			[
+				"-components-widget-bulk-actions/00-documentation-01-components-widget-bulk-actions.rendered.html",
+				"public/patterns/00-documentation-01-components-widget-bulk-actions/00-documentation-01-components-widget-bulk-actions.rendered.html"
+			],
+			[
+				"eneric-tooltip/00-documentation-01-components-generic-tooltip.rendered.html",
+				"public/patterns/00-documentation-01-components-generic-tooltip/00-documentation-01-components-generic-tooltip.rendered.html"
+			],
+			[
+				"patterns/00-documentation-01-components-global/00-documentation-01-components-global.rendered.html",
+				"public/patterns/00-documentation-01-components-global/00-documentation-01-components-global.rendered.html"
+			],
+			[
+				"o/01-modules-order-footer-order-footer-demo.rendered.html",
+				"public/patterns/01-modules-order-footer-order-footer-demo/01-modules-order-footer-order-footer-demo.rendered.html"
+			],
+			[
+				"entation-01-components-global/00-documentation-01-components-global.rendered.html",
+				"public/patterns/00-documentation-01-components-global/00-documentation-01-components-global.rendered.html"
+			],
+			[
+				"ation-01-components-global/00-documentation-01-components-global.rendered.html",
+				"public/patterns/00-documentation-01-components-global/00-documentation-01-components-global.rendered.html"
+			],
+			[
+				"onents-generic-tooltip/00-documentation-01-components-generic-tooltip.rendered.html",
+				"public/patterns/00-documentation-01-components-generic-tooltip/00-documentation-01-components-generic-tooltip.rendered.html"
+			],
+			[
+				"atterns/01-modules-side-panel-_side-panel/01-modules-side-panel-_side-panel.rendered.html",
+				"public/patterns/01-modules-side-panel-_side-panel/01-modules-side-panel-_side-panel.rendered.html"
+			],
+			[
+				"/01-modules-side-panel-_side-panel/01-modules-side-panel-_side-panel.rendered.html",
+				"public/patterns/01-modules-side-panel-_side-panel/01-modules-side-panel-_side-panel.rendered.html"
+			],
+			[
+				"blic/patterns/02-layouts-forms-_form-final-step/02-layouts-forms-_form-final-step.rendered.html",
+				"public/patterns/02-layouts-forms-_form-final-step/02-layouts-forms-_form-final-step.rendered.html"
+			],
+			[
+				"blic/patterns/00-documentation-01-components-global/00-documentation-01-components-global.rendered.html",
+				"public/patterns/00-documentation-01-components-global/00-documentation-01-components-global.rendered.html"
+			],
+			[
+				"documentation-01-components-global/00-documentation-01-components-global.rendered.html",
+				"public/patterns/00-documentation-01-components-global/00-documentation-01-components-global.rendered.html"
+			],
+			[
+				"cumentation-01-components-global/00-documentation-01-components-global.rendered.html",
+				"public/patterns/00-documentation-01-components-global/00-documentation-01-components-global.rendered.html"
+			],
+			[
+				"n-01-components-generic-tooltip/00-documentation-01-components-generic-tooltip.rendered.html",
+				"public/patterns/00-documentation-01-components-generic-tooltip/00-documentation-01-components-generic-tooltip.rendered.html"
+			],
+			[
+				"rns/01-modules-generic-alert-message-_generic-alert-message/01-modules-generic-alert-message-_generic-alert-message.rendered.",
+				"public/patterns/01-modules-generic-alert-message-_generic-alert-message/01-modules-generic-alert-message-_generic-alert-message.rendered.html"
+			],
+			[
+				"youts-forms-extended-attributes-_form-meUk/02-layouts-forms-extended-attributes-_form-meUk.rendered.html",
+				"public/patterns/02-layouts-forms-extended-attributes-_form-meUk/02-layouts-forms-extended-attributes-_form-meUk.rendered.html"
+			],
+			[
+				"-card/00-documentation-01-components-credit-card.rendered.html",
+				"public/patterns/00-documentation-01-components-credit-card/00-documentation-01-components-credit-card.rendered.html"
+			],
+			[
+				"eature-list/00-documentation-01-components-product-feature-list.rendered.html",
+				"public/patterns/00-documentation-01-components-product-feature-list/00-documentation-01-components-product-feature-list.rendered.html"
+			],
+			[
+				"0-documentation-01-components-product-feature-list.rendered.htm",
+				"public/patterns/00-documentation-01-components-product-feature-list/00-documentation-01-components-product-feature-list.rendered.html"
+			],
+			[
+				"mentation-01-components-product-feature-list/00-documentation-01-components-product-feature-list.rendered.htm",
+				"public/patterns/00-documentation-01-components-product-feature-list/00-documentation-01-components-product-feature-list.rendered.html"
+			],
+			[
+				"00-documentation-01-components-product-list/00-documentation-01-components-product-list.rendered.htm",
+				"public/patterns/00-documentation-01-components-product-list/00-documentation-01-components-product-list.rendered.html"
+			],
+			[
+				"00-documentation-01-components-product-feature-list.rende",
+				"public/patterns/00-documentation-01-components-product-feature-list/00-documentation-01-components-product-feature-list.rendered.html"
+			],
+			[
+				"-components-input/00-documentation-01-components-input.rendered.html",
+				"~/Documents/Namecheap/UX-Team/morpheus/public/patterns/00-documentation-01-components-input/00-documentation-01-components-input.rendered.html"
+			],
+			[
+				"-components-input/00-documentation-01-components-input.rendered.htm",
+				"public/patterns/00-documentation-01-components-input-group/00-documentation-01-components-input-group.rendered.html"
+			],
+			[
+				"components-input/00-documentation-01-components-input.rendered.htm",
+				"public/patterns/00-documentation-01-components-input/00-documentation-01-components-input.rendered.html"
+			],
+			[
+				"tion-01-components-generic-alert-message/00-documentation-01-components-generic-alert-message.rendered.html",
+				"public/patterns/00-documentation-01-components-generic-alert-message/00-documentation-01-components-generic-alert-message.rendered.html"
+			],
+			[
+				"0-documentation-01-components-financial-panel/00-documentation-01-components-financial-panel.rendered.ht",
+				"public/patterns/00-documentation-01-components-financial-panel/00-documentation-01-components-financial-panel.rendered.html"
+			],
+			[
+				"-documentation-01-components-financial-panel/00-documentation-01-components-financial-panel.rendered.ht",
+				"public/patterns/00-documentation-01-components-financial-panel/00-documentation-01-components-financial-panel.rendered.html"
+			],
+			[
+				"tion-01-components-cart-widget/00-documentation-01-components-cart-widget.rendered.",
+				"public/patterns/00-documentation-01-components-cart-widget/00-documentation-01-components-cart-widget.rendered.html"
+			],
+			[
+				"/00-documentation-01-components-cart-widget.rendered.ht",
+				"public/patterns/00-documentation-01-components-cart-widget/00-documentation-01-components-cart-widget.rendered.html"
+			],
+			[
+				"00-documentation-01-components-cart-widget/00-documentation-01-components-cart-widget.rendered.html",
+				"public/patterns/00-documentation-01-components-cart-widget/00-documentation-01-components-cart-widget.rendered.html"
+			],
+			[
+				"tion-01-components-payment-method/00-documentation-01-components-payment-method.rendered.html",
+				"public/patterns/00-documentation-01-components-payment-method/00-documentation-01-components-payment-method.rendered.html"
+			],
+			[
+				"credit-card/00-documentation-01-components-credit-card.rendered.html",
+				"public/patterns/00-documentation-01-components-credit-card/00-documentation-01-components-credit-card.rendered.html"
+			],
+			[
+				"t/01-modules-cart-widget-_cart-widget.rendered.html",
+				"public/patterns/01-modules-cart-widget-_cart-widget/01-modules-cart-widget-_cart-widget.rendered.html"
+			],
+			[
+				"nents-plugin-toggle/00-documentation-01-components-plugin-toggle.rendered.htm",
+				"public/patterns/00-documentation-01-components-plugin-toggle/00-documentation-01-components-plugin-toggle.rendered.html"
+			],
+			[
+				"ion-01-components-plugin-toggle/00-documentation-01-components-plugin-toggle.rendered.htm",
+				"public/patterns/00-documentation-01-components-plugin-toggle/00-documentation-01-components-plugin-toggle.rendered.html"
+			],
+			[
+				"on-01-components-modal/00-documentation-01-components-modal.rendered.html",
+				"public/patterns/00-documentation-01-components-modal/00-documentation-01-components-modal.rendered.html"
+			],
+			[
+				"ton-group/01-modules-toggle-button-group-_toggle-button-group.render",
+				"public/patterns/01-modules-toggle-button-group-_toggle-button-group/01-modules-toggle-button-group-_toggle-button-group.rendered.html"
+			],
+			[
+				"rt-widget/01-modules-cart-widget-_cart-widget.rendered.html",
+				"public/patterns/01-modules-cart-widget-_cart-widget/01-modules-cart-widget-_cart-widget.rendered.html"
+			],
+			[
+				"patterns/01-modules-credit-card-credit-card-demo/01-modules-credit-card-credit-card-demo.rendere",
+				"public/patterns/01-modules-credit-card-credit-card-demo/01-modules-credit-card-credit-card-demo.rendered.html"
+			],
+			[
+				"tooltip/00-documentation-01-components-generic-tooltip.rendere",
+				"public/patterns/00-documentation-01-components-generic-tooltip/00-documentation-01-components-generic-tooltip.rendered.html"
+			],
+			[
+				"components-financial-panel/00-documentation-01-components-financial-panel.rendered.html",
+				"public/patterns/00-documentation-01-components-financial-panel/00-documentation-01-components-financial-panel.rendered.html"
+			],
+			[
+				"croll-shadow/00-documentation-01-components-plugin-scroll-shadow.rendered.html",
+				"public/patterns/00-documentation-01-components-plugin-scroll-shadow/00-documentation-01-components-plugin-scroll-shadow.rendered.html"
+			],
+			[
+				"ocumentation-01-components-payment-method.rendered.html",
+				"public/patterns/00-documentation-01-components-payment-method/00-documentation-01-components-payment-method.rendered.html"
+			],
+			[
+				"documentation-01-components-order-footer/00-documentation-01-components-order-footer.rendered.html",
+				"public/patterns/00-documentation-01-components-order-footer/00-documentation-01-components-order-footer.rendered.html"
+			],
+			[
+				"ents-order-footer.rendered.html",
+				"public/patterns/00-documentation-01-components-order-footer/00-documentation-01-components-order-footer.rendered.html"
+			],
+			[
+				"-components-global/00-documentation-01-components-global.rendered.html",
+				"public/patterns/00-documentation-01-components-global/00-documentation-01-components-global.rendered.html"
+			],
+			[
+				"demo/01-modules-cart-widget-cart-widget-demo.rendered.html",
+				"public/patterns/01-modules-cart-widget-cart-widget-demo/01-modules-cart-widget-cart-widget-demo.rendered.html"
+			],
+			[
+				"rder-footer/00-documentation-01-components-order-footer.rendered.html",
+				"public/patterns/00-documentation-01-components-order-footer/00-documentation-01-components-order-footer.rendered.html"
+			],
+			[
+				"ts-order-footer/00-documentation-01-components-order-footer.rendered.htm",
+				"public/patterns/00-documentation-01-components-order-footer/00-documentation-01-components-order-footer.rendered.html"
+			],
+			[
+				"oter/00-documentation-01-components-order-footer.rendered.html",
+				"public/patterns/00-documentation-01-components-order-footer/00-documentation-01-components-order-footer.rendered.html"
+			],
+			[
+				"ation-01-components-order-footer.rendered.html",
+				"public/patterns/00-documentation-01-components-order-footer/00-documentation-01-components-order-footer.rendered.html"
+			],
+			[
+				"les-cart-widget-cart-widget-demo.rendered.html",
+				"public/patterns/01-modules-cart-widget-cart-widget-demo/01-modules-cart-widget-cart-widget-demo.rendered.html"
+			],
+			[
+				"dget-cart-widget-demo/01-modules-cart-widget-cart-widget-demo.ren",
+				"public/patterns/01-modules-cart-widget-cart-widget-demo/01-modules-cart-widget-cart-widget-demo.rendered.html"
+			],
+			[
+				"-footer/01-modules-cart-footer-_cart-footer.rendered.html",
+				"public/patterns/01-modules-cart-footer-_cart-footer/01-modules-cart-footer-_cart-footer.rendered.html"
+			],
+			[
+				"odules-generic-tooltip-_generic-tooltip.rendered.html",
+				"public/patterns/01-modules-generic-tooltip-_generic-tooltip/01-modules-generic-tooltip-_generic-tooltip.rendered.html"
+			],
+			[
+				"n-button/00-documentation-01-components-dropdown-button.rendered.htm",
+				"public/patterns/00-documentation-01-components-dropdown-button/00-documentation-01-components-dropdown-button.rendered.html"
+			],
+			[
+				"ton/00-documentation-01-components-dropdown-button.rendered.html",
+				"public/patterns/00-documentation-01-components-dropdown-button/00-documentation-01-components-dropdown-button.rendered.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Documents/Namecheap/UX-Team/shift/shift.sublime-project"
+			],
+			[
+				"c",
+				"~/Documents/Namecheap/UX-Team/c3po/c3po-client.sublime-project"
+			],
+			[
+				"\\",
+				"~/Documents/Namecheap/UX-Team/c3po/c3po-client.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 320.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"$('#sg-t-toggle')"
+			]
+		],
+		"width": 520.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 364.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

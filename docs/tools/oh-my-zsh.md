@@ -1,5 +1,7 @@
 ## Oh My Zsh
-Oh My Zsh is a delightful, open source, community-driven framework for managing your Zsh configuration. It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout...
+Oh My Zsh is a delightful, open source, community-driven framework for managing your Zsh configuration.
+
+It comes bundled with a ton of helpful functions, helpers, plugins, themes, and a few things that make you shout.
 
 ## Install oh-my-zsh
 
@@ -14,6 +16,53 @@ or **Via wget**
 ```js
     $ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
+
+## Theme 2 — Installing powerline Oh My ZSH theme
+
+### 1. Install Powerline fonts
+
+```shell
+    $ git clone https://github.com/powerline/fonts.git
+    $ cd fonts
+    $ ./install.sh
+```
+
+### 2. Change the Theme to “agnoster”
+
+```shell
+    $ open ~/.zshrc
+    Set ZSH_THEME="powerline" and save the file
+```
+
+### 3. Quit ITerm2 and reopen it.
+
+### 4. Set Powerline font
+Open ITerm2 and go to: _Preferences > Profiles > Text > Change Font_ and set it to something that has “for Powerline”.
+
+## Install Plugins
+
+### Plugin 1 — Add Syntax Highlighting Plugin
+The Syntax Highlighting plugin adds beautiful colors to the commands you are typing as shown below.
+
+```shell
+    git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+```
+
+Clone the zsh-syntax-highlighting plugin’s repo and copy it to the __“Oh My ZSH”__ plugins directory
+
+Next ativate the plugin in **~/.zshrc** by adding `zsh-syntax-highlighting` to the Plugins section as shown below.
+
+### Plugin 2 — Add ZSH-AutoSuggestion Plugin
+This plugin auto suggests any of the previous commands. Pretty handy!
+To select the completion, **simply press → key**
+
+```shell
+    git clone https://github.com/zsh-users/zsh-autosuggestions
+```
+
+Clone the zsh-autosuggestions plugin’s repo and copy it to the __“Oh My ZSH”__ plugins directory,
+
+Next activate the plugin in **~/.zshrc** by adding `zsh-autosuggestions` to the Plugins section as shown below.
 
 ## My Configuration Files
 
@@ -64,12 +113,5 @@ or **Via wget**
     alias home='cd ~/'
     alias docs='cd ~/Documents'
     alias downloads='cd ~/Downloads'
-    alias ux-team='cd Documents/Namecheap/UX-Team'
-    alias dev='npm run dev'
-    alias lint:js='npm run lint:js'
-    alias lint:ts='npm run lint:ts'
-    alias lint:css='npm run lint:css'
-    alias lint:css='npm run lint:css'
-    alias test:unit='npm run test:unit'
 
 ```
