@@ -17,19 +17,23 @@ export default new Router({
             name: 'home',
             component: home
         },
-        // CSS Tips
-        {
+
+        { // CSS Tips: Text Stroke & Fill Color
             path: '/css-tips/text-fill-effect',
             name: 'Text Stroke & Fill Color',
             component: pages
         },
-        // Rollup JS
-        {
-            path: '/bundles/rollupsjs',
+        { // Tools: Rollup.js
+            path: '/tools/rollupsjs',
             name: 'Rollup.js Bundle',
             component: pages
         },
-        // Javascript
+       { // Tools: Oh My Zsh
+            path: '/tools/oh-my-zsh',
+            name: 'Oh My Zsh',
+            component: pages
+        },
+
         {
             path: '/javascript/relative-time-format',
             name: 'Relative Time Format',
