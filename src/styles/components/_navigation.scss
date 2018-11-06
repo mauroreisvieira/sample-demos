@@ -1,11 +1,30 @@
 .navigation {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
   margin: 0;
-  padding: inherit;
+  padding: 2rem;
 
   &__item {
     position: relative;
     margin-bottom: $baseline / 4;
+    text-transform: uppercase;
+    font-weight: $fontBold;
+    margin-bottom: 2rem;
+    color: $colorVioletLight;
+  }
+
+  &__submenu {
+    margin-top: $baseline / 2;
+    border-left: 4px solid $colorVioletLight;
+    padding-left: $baseline / 2;
+    margin-left: $baseline / 2;
+
+    .navigation__item {
+      text-transform: none;
+      font-weight: $fontRegular;
+      margin-bottom: $baseline / 3;
+    }
   }
 
   &__link {
@@ -14,6 +33,7 @@
     font-weight: $fontSemiBold;
     transition: color .2s $animationEasing;
 
+    &.router-link-active,
     &:hover {
       color: $colorViolet;
     }

@@ -3,9 +3,12 @@
         <hero :title="title"  />
         <div class="container">
             <div class="card">
-                <div v-html="markdown"></div>
+                <div class="content" v-html="markdown"></div>
             </div>
         </div>
+        <footer class="footer">
+            <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
+        </footer>
     </article>
 </template>
 

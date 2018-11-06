@@ -31,8 +31,12 @@ main {
   padding: 0 $baseline;
 
   &--full {
-      max-width: 100%;
+    max-width: 100%;
   }
+}
+
+.content {
+  min-height: 100vh;
 }
 
 .app {

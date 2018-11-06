@@ -1,5 +1,4 @@
 .sidebar {
     display: flex;
-    width: 320px;
-    margin-right: $baseline * 2;
+    min-width: 320px;
 }

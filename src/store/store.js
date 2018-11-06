@@ -7,7 +7,7 @@ export const store = new Vuex.Store({
     state: {
         menus: [
             {
-                name: '🤯 JavaScript Tip\'s',
+                name: '01. JavaScript Tip\'s',
                 isActive: true,
                 data: [
                     { url: '/javascript/relative-time-format', title: 'Relative Time Format'},
@@ -23,14 +23,14 @@ export const store = new Vuex.Store({
                 ]
             },
             {
-                name: '🔮 JavaScript Custom Elements',
+                name: '02. JavaScript Custom Elements',
                 isActive: false,
                 data: [
                     { url: '/custom-elements/my-element/index', title: 'Custom Elements'}
                 ]
             },
             {
-                name: '🎉 ECMAScript Next',
+                name: '03. ECMAScript Next',
                 isActive: true,
                 data: [
                     { url: '/ecma-script/es2017', title: 'ES2017'},
@@ -38,21 +38,21 @@ export const store = new Vuex.Store({
                 ]
             },
             {
-                name: '🦄 CSS Tip\'s',
+                name: '04. CSS Tip\'s',
                 isActive: true,
                 data: [
                     { url: '/css-tips/text-fill-effect', title: 'Text Fill Effect'}
                 ]
             },
             {
-                name: '📦 Bundles',
+                name: '05. Bundles',
                 isActive: true,
                 data: [
                     { url: '/bundles/rollupsjs', title: 'Rollup js'},
                 ]
             },
             {
-                name: '🛠 Tools',
+                name: '06. Tools',
                 isActive: true,
                 data: [
                     { url: '/tools/oh-my-zsh', title: 'Oh My Zsh'}

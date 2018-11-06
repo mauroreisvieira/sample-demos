@@ -2,21 +2,16 @@
     <div class="app">
         <top-header logo="./assets/images/logo.png" />
         <main>
-            <div v-for="(menu, index) in menus" :key="index" v-if="menu.isActive">
-                <h2>{{ menu.name }}</h2>
-                <sidebar :menus="menu.data" />
-            </div>
-            <router-view/>
+            <sidebar :menus="menus" />
+            <router-view :key="$route.fullPath"/>
         </main>
-        <footer class="footer">
-            <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
-        </footer>
     </div>
 </template>
 
 <script>
 import topHeader from './layout/top-header.vue'
-import sidebar from './components/sidebar.vue'
+import sidebar from './layout/sidebar.vue'
+/** Pages Module */
 import pages from './pages/pages'
 
 export default {
@@ -28,7 +23,7 @@ export default {
         }
     },
     mounted() {
-        console.log(typeof this.menus);
+
     }
 }
 </script>
