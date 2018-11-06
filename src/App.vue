@@ -10,10 +10,12 @@
 
 <script>
 import topHeader from './layout/top-header.vue'
+import pages from './pages/pages'
 
 export default {
     name: 'app',
-    components: { topHeader }
+    components: { topHeader },
+    mounted() {}
 }
 </script>
 

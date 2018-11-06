@@ -1,7 +1,7 @@
 <template>
     <ul class="navigation">
         <li class="navigation__item" v-for="(menu, index) in menus" :key="index">
-            <router-link :to="menu.url" :title="menu.tilte" class="navigation__link">{{ menu.tilte }}</router-link>
+            <router-link :to="menu.url" :title="menu.title" class="navigation__link">{{ menu.title }}</router-link>
         </li>
     </ul>
 </template>
