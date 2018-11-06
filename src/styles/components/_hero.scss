@@ -1,4 +1,6 @@
 .hero {
-    padding: $baseline * 2 0;
+    display: flex;
+    flex-direction: column;
+    padding: $baseline * 2;
     background-color: $colorViolet;
 }

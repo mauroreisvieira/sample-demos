@@ -1,12 +1,12 @@
 <template>
-    <div>
+    <article>
         <hero :title="title"  />
-        <main class="container">
+        <div class="container">
             <div class="card">
-            <div v-html="markdown"></div>
+                <div v-html="markdown"></div>
+            </div>
         </div>
-    </main>
-</div>
+    </article>
 </template>
 
 <script>

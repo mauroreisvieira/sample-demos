@@ -1,12 +1,10 @@
 <template>
     <header class="header">
-        <div class="container">
-            <div class="logo">
-                <img :src="logo" alt="Sample Demos">
-                Sample Demos
-            </div>
-            <menu-nav />
+        <div class="logo">
+            <img :src="logo" alt="Sample Demos">
+            Sample Demos
         </div>
+        <menu-nav />
     </header>
 </template>
 

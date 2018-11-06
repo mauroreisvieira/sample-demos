@@ -19,6 +19,7 @@
         },
         methods: {},
         mounted() {
+            console.log(this.menus);
         }
     }
 </script>

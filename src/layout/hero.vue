@@ -1,11 +1,9 @@
 <template>
     <div class="hero">
-        <div class="container">
-            <h1>{{ title }}</h1>
-            <ul class="tag" v-if="tags">
-                <li class="tag__item" v-for="(tag, index) in tags">#{{tag}}</li>
-            </ul>
-        </div>
+        <h1>{{ title }}</h1>
+        <ul class="tag" v-if="tags">
+            <li class="tag__item" v-for="(tag, index) in tags">#{{tag}}</li>
+        </ul>
     </div>
 </template>
 
