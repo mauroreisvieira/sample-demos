@@ -1,16 +1,16 @@
 <template>
     <header class="header">
         <div class="toggle-sidebar" @click="toggleMenu">
-          <div class="line-menu half start"></div>
           <div class="line-menu"></div>
-          <div class="line-menu half end"></div>
-        </div>
-        <div class="logo">
-            <img :src="logo" alt="Sample Demos">
-            Sample Demos
-        </div>
-        <menu-nav />
-    </header>
+          <div class="line-menu"></div>
+          <div class="line-menu"></div>
+      </div>
+      <div class="logo">
+        <img :src="logo" alt="Sample Demos">
+        Sample Demos
+    </div>
+    <menu-nav />
+</header>
 </template>
 
 <script>
@@ -22,16 +22,17 @@
                 type: String
             }
         },
-      data() {
-        return {}
-    },
-    methods: {
-        toggleMenu(evt) {
-            document.querySelector('.toggle-sidebar').classList.toggle('open');
-            document.querySelector('article').classList.toggle('is-open');
+        data() {
+            return {}
+        },
+        methods: {
+            toggleMenu(evt) {
+                document.querySelector('.toggle-sidebar').classList.toggle('open');
+                document.querySelector('article').classList.toggle('is-open');
+            }
+        },
+        mounted() {
+
         }
-    },
-    mounted() {
     }
-}
 </script>
