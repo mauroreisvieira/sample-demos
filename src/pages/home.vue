@@ -1,6 +1,7 @@
-<template>
+ <template>
     <article >
         <hero title="Modern web development" :tags="['javascript', 'css', 'scss', 'typescript', 'none', 'html', 'tips', 'sublime']" />
+        <div class="content"></div>
         <footer class="footer">
             <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
         </footer>
