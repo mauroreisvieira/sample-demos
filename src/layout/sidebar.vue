@@ -15,7 +15,6 @@
 
 <script>
     export default {
-        name: 'navigation',
         props: {
             menus: {
                 type: Array

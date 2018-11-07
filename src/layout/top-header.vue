@@ -11,7 +11,6 @@
 <script>
     import menuNav from './menu-nav.vue'
     export default {
-        name: 'top-header',
         components: { menuNav },
         props: {
             logo: {
