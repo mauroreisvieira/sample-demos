@@ -1,5 +1,8 @@
 <template>
     <header class="header">
+        <div class="toggle-sidebar" @click="toggleMenu">
+            <span></span>
+        </div>
         <div class="logo">
             <img :src="logo" alt="Sample Demos">
             Sample Demos
@@ -20,7 +23,11 @@
       data() {
         return {}
     },
-    methods: {},
+    methods: {
+        toggleMenu() {
+            document.querySelector('article').classList.toggle('is-open');
+        }
+    },
     mounted() {
     }
 }
