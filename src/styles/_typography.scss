@@ -3,7 +3,7 @@ h1 {
     margin: 0;
     font-weight: $fontSemiBold;
     font-size: $fontXLarge;
-    color: #fff;
+    color: $colorWhite;
 
     @include small() {
         font-size: $fontLarge;
@@ -25,7 +25,6 @@ h2::before {
     display: inline-flex;
     margin-right: $baseline / 2;
     font-size: $fontLarge;
-    color: $colorGrayKeyline;
     content: '#';
 
     @include small() {
@@ -44,7 +43,6 @@ li {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
-    color: $colorGrayDark;
 }
 
 strong {

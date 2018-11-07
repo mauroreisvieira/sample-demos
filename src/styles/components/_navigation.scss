@@ -29,13 +29,13 @@
 
   &__link {
     text-decoration: none;
-    color: $colorGrayDark;
+    color: var(--colorText);
     font-weight: $fontSemiBold;
     transition: color .2s $animationEasing;
 
     &.router-link-active,
     &:hover {
-      color: $colorViolet;
+      color: var(--colorPrimary);
     }
   }
 }

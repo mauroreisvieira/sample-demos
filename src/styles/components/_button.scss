@@ -2,7 +2,7 @@
   display: inline-flex;
   padding: $baseline;
   text-transform: uppercase;
-  color: $colorViolet;
+  color: var(--colorPrimary);
   font-size: $fontXSmall;
   font-weight: $fontSemiBold;
   border: 2px solid currentColor;
@@ -11,8 +11,8 @@
 
   &:focus,
   &:hover {
-    background-color: $colorViolet;
-    border: 2px solid $colorViolet;
+    background-color: var(--colorPrimary);
+    border: 2px solid var(--colorPrimary);
     color: white;
     outline: none;
   }

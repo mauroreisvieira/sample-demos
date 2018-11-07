@@ -1,0 +1,16 @@
+.theme {
+    &--light {
+        --colorPrimary: #{$colorViolet};
+        --colorSecondary: #{$colorGrayDark};
+        --colorText: #{$colorGrayDark};
+        --backgroundPrimary: #{$colorWhiteSomke};
+        --backgroundSecondary: #{$colorWhite};
+    }
+    &--dark {
+        --colorPrimary: #{$colorViolet};
+        --colorSecondary: #{$colorWhite};
+        --colorText: #{$colorWhite};
+        --backgroundPrimary: #{$colorDarkSomke};
+        --backgroundSecondary: #{$colorDark};
+    }
+}

@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700');
 @import "normalize";
 @import "mixins";
+@import "colors";
 @import "functions";
 @import "variables";
-@import "global";
 @import "typography";
 @import "helper";
+@import "theme";
+@import "global";
 
 @import "components/hero";
 @import "components/tag";

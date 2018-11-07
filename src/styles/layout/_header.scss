@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  background-color: #fff;
+  background-color: var(--backgroundSecondary);
 
   .container {
     flex-direction: row;
@@ -25,7 +25,7 @@
   .logo {
     display: inline-flex;
     align-items: center;
-    color: $colorViolet;
+    color: var(--colorPrimary);
     text-transform: uppercase;
     font-size: $fontMedium;
     font-weight: $fontSemiBold;

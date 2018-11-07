@@ -11,7 +11,7 @@
   &__link {
     position: relative;
     text-decoration: none;
-    color: $colorViolet;
+    color: var(--colorPrimary);
     font-weight: $fontLight;
     padding: $baseline / 2;
     text-transform: lowercase;

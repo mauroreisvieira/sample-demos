@@ -6,7 +6,7 @@ html, body, button {
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
   font-size: $fontSizeDefault;
-  background: $colorWhiteSomke;
+  background: var(--backgroundPrimary);
   overflow-y: scroll;
 }
 
@@ -15,7 +15,7 @@ body {
   margin: 0;
   font-family: $fontDefault;
   font-weight: $fontLight;
-  color: $colorGrayDark;
+  color: var(--colorText);
 }
 
 main {
