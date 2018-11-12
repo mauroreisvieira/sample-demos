@@ -24,9 +24,9 @@ export const store = new Vuex.Store({
             },
             {
                 name: '02. JavaScript Custom Elements',
-                isActive: false,
+                isActive: true,
                 data: [
-                    { url: '/custom-elements/my-element/index', title: 'Custom Elements'}
+                    { url: '/custom-elements/my-element', title: 'My Element'}
                 ]
             },
             {
