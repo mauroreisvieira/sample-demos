@@ -23,7 +23,7 @@ export const store = new Vuex.Store({
                 ]
             },
             {
-                name: '02. JavaScript Custom Elements',
+                name: '02. Custom Elements',
                 isActive: true,
                 data: [
                     { url: '/custom-elements/my-element', title: 'My Element'}
