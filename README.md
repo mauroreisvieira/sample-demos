@@ -6,7 +6,7 @@
 git clone https://github.com/maurovieirareis/sample-demos
 ```
 
-Alternatively you can [download](https://codeload.github.com/maurovieirareis/sample-demos/zip/master)
+Alternatively you can [download](https://codeload.github.com/mauroreisvieira/sample-demos/zip/master)
 this repository.
 
 ## License
