@@ -3,7 +3,7 @@
 ### Clone the repo using Git
 
 ```bash
-git clone https://github.com/maurovieirareis/sample-demos
+git clone https://github.com/mauroreisvieira/sample-demos
 ```
 
 Alternatively you can [download](https://codeload.github.com/mauroreisvieira/sample-demos/zip/master)
