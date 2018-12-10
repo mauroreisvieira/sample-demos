@@ -1,10 +1,7 @@
 <template>
     <article>
-        <hero :title="title"  />
         <div class="container">
-            <div class="card">
-                <div class="content" v-html="markdown"></div>
-            </div>
+            <div class="content" v-html="markdown"></div>
         </div>
         <footer class="footer">
             <p>Created with <span>♥</span> by <a href="http://twitter.com/@mauroreisvieira">@mauroreisvieira</a> in Portugal</p>
@@ -15,16 +12,14 @@
 <script>
     import Prism from 'prismjs'
     import Remarkable from 'remarkable'
-    import hero from './../layout/hero.vue'
     export default {
-        components: { hero },
         data: function () {
             return {
                 title: this.$route.name,
                 file: undefined,
                 markdown: undefined
-          }
-      },
+            }
+        },
         mounted() {
             this.file = window.location.origin + window.location.pathname + 'docs' + this.$route.path + '.md';
             const md = new Remarkable({
@@ -44,7 +39,7 @@
     }
 </script>
 <style lang="css">
-    @import "./../../assets/prism/prism.css";
+@import "./../../assets/prism/prism.css";
 </style>
 
 

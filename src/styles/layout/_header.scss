@@ -5,6 +5,7 @@
   width: 100%;
   padding: 0 $baseline * 2;
   background-color: var(--backgroundSecondary);
+  border-bottom: 1px solid var(--backgroundPrimary);
 
   .toggle-sidebar {
     position: absolute;

@@ -14,7 +14,7 @@ h2 {
     font-size: $fontLarge;
     line-height: 1.4;
     font-weight: $fontBold;
-    margin: $baseline * 2 0;
+    margin: 0 0 $baseline * 2;
 
     @include small() {
         font-size: $fontMedium;
