@@ -20,6 +20,7 @@ export const store = new Vuex.Store({
                     { url: '/javascript/array-sort', title: 'Array sort()'},
                     { url: '/javascript/array-filter', title: 'Array filter()'},
                     { url: '/javascript/array-flatmap', title: 'Array flatMap()'}
+                    { url: '/javascript/set', title: 'Set'}
                 ]
             },
             {
